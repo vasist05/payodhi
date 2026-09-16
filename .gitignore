@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+venv/
+.venv/
+
+# Vite build cache
+.vite/
+
+# PyTorch & model weights
+*.pth
+*.pt
+*.ckpt
+
+# Temporary data
+data/fp_filter/csiro_patches/
+data/fp_filter/era5_cache/
+
+# Node & Frontend Build
+node_modules/
+dist/
+*.log
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
