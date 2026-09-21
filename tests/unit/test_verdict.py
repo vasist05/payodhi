@@ -60,3 +60,15 @@ def test_edge_case_capacity_veto_and_all_pillars_zero():
     res_zeros = classify_verdict(0.0, 0.01, 0.90, reason_context="all_pillars_zero")
     assert res_zeros["verdict"] == "INSUFFICIENT_EVIDENCE"
     assert "all_pillars_zero" in res_zeros["reason"]
+
+
+def test_db_verdict_matches_database_enum():
+    """Verify db_verdict field exactly matches backend VerdictEnum values."""
+    res1 = classify_verdict(calibrated_score=0.85, p_value=0.001, stability_index=0.95)
+    assert res1["db_verdict"] == "prosecutable"
+
+    res2 = classify_verdict(calibrated_score=0.70, p_value=0.02, stability_index=0.85)
+    assert res2["db_verdict"] == "person_of_interest"
+
+    res3 = classify_verdict(calibrated_score=0.40, p_value=0.10, stability_index=0.50)
+    assert res3["db_verdict"] == "insufficient_evidence"

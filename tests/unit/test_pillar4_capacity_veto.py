@@ -159,3 +159,19 @@ def test_tiny_spill_under_100_liters_passes_any_vessel():
     assert res["multiplier"] == 1.0
     assert res["spill_volume_liters"] == 50.0
     assert "tiny_spill_pass" in res["reason"]
+
+
+def test_db_multiplier_always_0_or_1():
+    """Verify db_multiplier is strictly 0 or 1 for database CHECK constraint."""
+    # Veto case -> 0
+    res_veto = capacity_veto(1000000.0, 500.0, "fishing")
+    assert res_veto["db_multiplier"] == 0
+
+    # Normal pass -> 1
+    res_pass = capacity_veto(1000.0, 500.0, "fishing")
+    assert res_pass["db_multiplier"] == 1
+
+    # Low confidence 0.5 case -> 1 (does not veto)
+    res_low = capacity_veto(10000.0, None, "unregistered_craft")
+    assert res_low["multiplier"] == 0.5
+    assert res_low["db_multiplier"] == 1

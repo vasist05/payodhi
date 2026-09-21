@@ -44,6 +44,7 @@ TINY_SPILL_VOLUME_LITERS = 100.0  # 100 liters
 
 class CapacityVetoResult(BaseModel):
     multiplier: float = Field(..., description="0.0 (veto), 1.0 (pass), or 0.5 (low confidence)")
+    db_multiplier: int = Field(..., description="PostgreSQL-compliant multiplier: 0 (veto) or 1 (pass)")
     spill_volume_liters: float = Field(..., description="Estimated spill volume in liters")
     vessel_capacity_liters: float = Field(..., description="Estimated vessel bunker/cargo capacity in liters")
     reason: str = Field(..., description="Detailed explanation or edge case flag")
@@ -76,6 +77,7 @@ def capacity_veto(
         logger.warning("Invalid spill area: %s m². Passing veto with neutral multiplier.", spill_area_m2)
         return CapacityVetoResult(
             multiplier=1.0,
+            db_multiplier=1,
             spill_volume_liters=0.0,
             vessel_capacity_liters=0.0,
             reason="invalid_spill_area",
@@ -105,6 +107,7 @@ def capacity_veto(
         )
         return CapacityVetoResult(
             multiplier=0.0,
+            db_multiplier=0,
             spill_volume_liters=spill_volume_liters,
             vessel_capacity_liters=0.0,
             reason="NATURAL_SEEP_HYPOTHESIS_volume_exceeds_threshold" + thickness_flag,
@@ -119,6 +122,7 @@ def capacity_veto(
         vessel_capacity_liters = eff_dwt * 1000.0
         return CapacityVetoResult(
             multiplier=1.0,
+            db_multiplier=1,
             spill_volume_liters=spill_volume_liters,
             vessel_capacity_liters=round(vessel_capacity_liters, 1),
             reason="tiny_spill_pass_below_100L" + thickness_flag,
@@ -150,6 +154,7 @@ def capacity_veto(
                 reason_str += f" ({', '.join(dwt_notes)})"
             return CapacityVetoResult(
                 multiplier=0.5,
+                db_multiplier=1,
                 spill_volume_liters=spill_volume_liters,
                 vessel_capacity_liters=0.0,
                 reason=reason_str + thickness_flag,
@@ -182,6 +187,7 @@ def capacity_veto(
 
     return CapacityVetoResult(
         multiplier=multiplier,
+        db_multiplier=int(multiplier),
         spill_volume_liters=spill_volume_liters,
         vessel_capacity_liters=vessel_capacity_liters,
         reason=reason,

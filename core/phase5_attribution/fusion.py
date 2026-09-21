@@ -15,11 +15,19 @@ Adheres strictly to phase5Final.md rules:
 from __future__ import annotations
 
 import logging
+from pathlib import Path
 from typing import Any, Dict, Optional
+
+try:
+    import yaml
+except ImportError:
+    yaml = None
 
 from core.phase5_attribution.calibration import calibrate_score
 
 logger = logging.getLogger(__name__)
+
+AHP_CONFIG_PATH = Path("config/ahp_weights.yaml")
 
 DEFAULT_WEIGHTS: Dict[str, float] = {
     "cpa": 0.20,
@@ -30,6 +38,21 @@ DEFAULT_WEIGHTS: Dict[str, float] = {
     "permutation": 0.15,
     "sensitivity": 0.15,
 }
+
+
+def _load_ahp_weights() -> Dict[str, float]:
+    """Load AHP weights from config file or fallback to DEFAULT_WEIGHTS."""
+    if yaml is not None and AHP_CONFIG_PATH.exists():
+        try:
+            with open(AHP_CONFIG_PATH, "r", encoding="utf-8") as f:
+                data = yaml.safe_load(f)
+                if isinstance(data, dict):
+                    weights = data.get("ahp_weights", data)
+                    if isinstance(weights, dict):
+                        return {str(k): float(v) for k, v in weights.items()}
+        except Exception as e:
+            logger.warning("Failed to load %s: %s. Using default weights.", AHP_CONFIG_PATH, e)
+    return dict(DEFAULT_WEIGHTS)
 
 
 def _extract_pillar_score(pillar_key: str, p_data: Dict[str, Any]) -> float:
@@ -109,7 +132,7 @@ def fuse_scores(
             if not matched:
                 w_map[k] = float(v)
     else:
-        w_map = dict(DEFAULT_WEIGHTS)
+        w_map = _load_ahp_weights()
 
     # Normalize weights sum
     total_w = sum(w_map.values())

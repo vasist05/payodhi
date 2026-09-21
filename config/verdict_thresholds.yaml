@@ -1,0 +1,11 @@
+# UNCLOS / MARPOL Court Admissibility Tier Thresholds
+verdict_thresholds:
+  tier1_prosecutable:
+    max_p_value: 0.01
+    min_calibrated_score: 0.80
+    min_stability_index: 0.90
+  tier2_person_of_interest:
+    max_p_value: 0.05
+    min_calibrated_score: 0.60
+  null_hypothesis_cutoff: 0.05
+  max_legal_confidence: 0.99
