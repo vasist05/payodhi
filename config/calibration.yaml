@@ -1,0 +1,4 @@
+# Platt scaling calibration parameters
+platt_scaling:
+  a: 2.0
+  b: 5.0
