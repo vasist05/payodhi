@@ -66,3 +66,5 @@ htmlcov/
 Thumbs.db
 .vscode/
 .idea/
+# Phase 8 — runtime artifacts
+backend/notification/alerts.db
