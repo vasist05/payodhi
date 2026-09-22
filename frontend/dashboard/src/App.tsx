@@ -19,7 +19,7 @@ export const App: React.FC = () => {
   const [isTriggering, setIsTriggering] = useState(false);
 
   const selectedAlert: CoastGuardAlert | null =
-    alerts.find((a) => a.id === selectedAlertId) ?? latest;
+    (alerts ?? []).find((a) => a.id === selectedAlertId) ?? latest;
 
   const triggerAlert = async (preset: typeof PRESETS[number]) => {
     setIsTriggering(true);
@@ -118,7 +118,7 @@ export const App: React.FC = () => {
                 key={preset.id}
                 onClick={() => triggerAlert(preset)}
                 disabled={isTriggering}
-                className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white text-xs font-bold transition-all active:scale-95 disabled:opacity-50 disabled:cursor-wait shadow-lg shadow-cyan-900/20"
+                className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white text-xs font-bold transition-all active:scale-95 disabled:opacity-50 disabled:cursor-wait shadow-lg shadow-cyan-900/20 cursor-pointer"
               >
                 <Play className="w-3.5 h-3.5" />
                 {preset.label}
@@ -159,54 +159,57 @@ export const App: React.FC = () => {
         </section>
 
         {/* Alert history */}
-        {alerts.length > 1 && (
+        {(alerts ?? []).length > 1 && (
           <section>
             <h2 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
-              History ({alerts.length})
+              History ({(alerts ?? []).length})
             </h2>
             <div className="space-y-2">
-              {alerts.slice(1).map((a) => (
-                <button
-                  key={a.id}
-                  onClick={() => setSelectedAlertId(a.id)}
-                  className={`w-full text-left p-3 rounded-xl border transition-all ${
-                    selectedAlert?.id === a.id
-                      ? 'bg-slate-800 border-cyan-600'
-                      : 'bg-slate-900 border-slate-700 hover:border-slate-600'
-                  }`}
-                >
-                  <div className="flex items-center justify-between text-xs">
-                    <span className="font-bold text-white">
-                      {a.stationName}
-                    </span>
-                    <span className="text-slate-400 font-mono">
-                      {new Date(a.createdAt).toLocaleTimeString()}
-                    </span>
-                  </div>
-                  <div className="text-xs text-slate-400 mt-1">
-                    {a.interceptionCount} assets · ETA {a.etaHours.toFixed(1)}h
-                    ·{' '}
-                    <span
-                      className={
-                        a.severity === 'HIGH'
-                          ? 'text-rose-300'
-                          : 'text-amber-300'
-                      }
-                    >
-                      {a.severity}
-                    </span>
-                    {a.ackedBy && (
-                      <span className="ml-2 text-emerald-400">• acked</span>
-                    )}
-                  </div>
-                </button>
-              ))}
+              {(alerts ?? []).slice(1).map((a) => {
+                const eta = a.etaHours != null ? Number(a.etaHours).toFixed(1) : '—';
+                const time = a.createdAt ? new Date(a.createdAt).toLocaleTimeString() : '';
+                return (
+                  <button
+                    key={a.id}
+                    onClick={() => setSelectedAlertId(a.id)}
+                    className={`w-full text-left p-3 rounded-xl border transition-all cursor-pointer ${
+                      selectedAlert?.id === a.id
+                        ? 'bg-slate-800 border-cyan-600'
+                        : 'bg-slate-900 border-slate-700 hover:border-slate-600'
+                    }`}
+                  >
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="font-bold text-white">
+                        {a.stationName}
+                      </span>
+                      <span className="text-slate-400 font-mono">
+                        {time}
+                      </span>
+                    </div>
+                    <div className="text-xs text-slate-400 mt-1">
+                      {a.interceptionCount ?? 0} assets · ETA {eta}h ·{' '}
+                      <span
+                        className={
+                          a.severity === 'HIGH'
+                            ? 'text-rose-300'
+                            : 'text-amber-300'
+                        }
+                      >
+                        {a.severity}
+                      </span>
+                      {a.ackedBy && (
+                        <span className="ml-2 text-emerald-400">• acked</span>
+                      )}
+                    </div>
+                  </button>
+                );
+              })}
             </div>
           </section>
         )}
 
         {/* Empty state */}
-        {alerts.length === 0 && !error && (
+        {(alerts ?? []).length === 0 && !error && (
           <div className="text-center py-12 text-slate-500 text-sm">
             No alerts yet. Fire a demo trigger above to see the flow.
           </div>

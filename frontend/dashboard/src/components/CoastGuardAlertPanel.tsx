@@ -20,6 +20,12 @@ export const CoastGuardAlertPanel: React.FC<Props> = ({ alert, onAcknowledge }) 
   }
 
   const isAcked = Boolean(alert.ackedBy);
+  const backupList = alert.backupStations ?? [];
+  const nearestVesselsList = alert.nearestVessels ?? [];
+  const distStr = alert.stationDistanceKm != null ? Number(alert.stationDistanceKm).toFixed(1) : '—';
+  const etaStr = alert.etaHours != null ? Number(alert.etaHours).toFixed(1) : '—';
+  const confStr = alert.confidence != null ? (Number(alert.confidence) * 100).toFixed(1) : '0';
+  const dateStr = alert.createdAt ? new Date(alert.createdAt).toUTCString() : '';
 
   return (
     <div className="p-5 bg-slate-900 rounded-2xl border border-amber-600/60 shadow-xl shadow-amber-950/30">
@@ -36,7 +42,7 @@ export const CoastGuardAlertPanel: React.FC<Props> = ({ alert, onAcknowledge }) 
               : 'bg-amber-950 text-amber-300 border-amber-800'
           }`}
         >
-          {alert.severity}
+          {alert.severity || 'HIGH'}
         </span>
       </div>
 
@@ -45,19 +51,18 @@ export const CoastGuardAlertPanel: React.FC<Props> = ({ alert, onAcknowledge }) 
         <div className="flex items-start gap-3 bg-slate-800/60 p-3 rounded-xl border border-slate-700/60">
           <Radio className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
           <div className="flex-1 min-w-0">
-            <p className="font-bold text-white text-sm">{alert.stationName}</p>
+            <p className="font-bold text-white text-sm">{alert.stationName || 'Coast Guard Station'}</p>
             <p className="text-xs text-slate-400 mt-0.5">
-              {alert.stationDistanceKm.toFixed(1)} km from spill origin · ETA{' '}
-              {alert.etaHours.toFixed(1)} h
+              {distStr} km from spill origin · ETA {etaStr} h
             </p>
           </div>
         </div>
 
         {/* Backup stations */}
-        {alert.backupStations.length > 0 && (
+        {backupList.length > 0 && (
           <p className="text-xs text-slate-400 px-1">
             <span className="text-slate-500">Backup stations:</span>{' '}
-            {alert.backupStations.join(', ')}
+            {backupList.join(', ')}
           </p>
         )}
 
@@ -66,11 +71,11 @@ export const CoastGuardAlertPanel: React.FC<Props> = ({ alert, onAcknowledge }) 
           <Ship className="w-4 h-4 text-emerald-400 flex-shrink-0" />
           <div className="flex-1">
             <p className="text-sm font-bold text-emerald-300">
-              {alert.interceptionCount} interception-capable assets within 100 km
+              {alert.interceptionCount ?? 0} interception-capable assets within 100 km
             </p>
-            {alert.nearestVessels.length > 0 && (
+            {nearestVesselsList.length > 0 && (
               <p className="text-xs text-emerald-200/70 mt-0.5">
-                Nearest: {alert.nearestVessels.slice(0, 3).join(', ')}
+                Nearest: {nearestVesselsList.slice(0, 3).join(', ')}
               </p>
             )}
           </div>
@@ -87,7 +92,7 @@ export const CoastGuardAlertPanel: React.FC<Props> = ({ alert, onAcknowledge }) 
         <div className="flex items-center justify-between text-xs px-1 pt-1">
           <span className="text-slate-500">Detection confidence</span>
           <span className="font-mono text-cyan-300 font-bold">
-            {(alert.confidence * 100).toFixed(1)}%
+            {confStr}%
           </span>
         </div>
 
@@ -113,7 +118,7 @@ export const CoastGuardAlertPanel: React.FC<Props> = ({ alert, onAcknowledge }) 
         {/* Timestamp + ack */}
         <div className="flex items-center justify-between pt-3 border-t border-slate-800 mt-1">
           <p className="flex items-center gap-1.5 text-xs text-slate-500">
-            <Clock className="w-3 h-3" /> {new Date(alert.createdAt).toUTCString()}
+            <Clock className="w-3 h-3" /> {dateStr}
           </p>
           {isAcked ? (
             <span className="flex items-center gap-1 text-xs text-emerald-400 font-semibold">
@@ -122,7 +127,7 @@ export const CoastGuardAlertPanel: React.FC<Props> = ({ alert, onAcknowledge }) 
           ) : onAcknowledge ? (
             <button
               onClick={() => onAcknowledge(alert.id)}
-              className="text-xs font-bold px-3 py-1.5 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white transition-colors active:scale-95"
+              className="text-xs font-bold px-3 py-1.5 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white transition-colors active:scale-95 cursor-pointer"
             >
               Acknowledge
             </button>
