@@ -1,0 +1,10 @@
+# AHP (Analytic Hierarchy Process) Weights for Phase 5 Evidential Fusion
+# Sum of weights must equal 1.00
+ahp_weights:
+  cpa: 0.20
+  dark: 0.15
+  loiter: 0.15
+  capacity: 0.10
+  draft: 0.10
+  permutation: 0.15
+  sensitivity: 0.15
