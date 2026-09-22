@@ -1,0 +1,98 @@
+[
+    {
+        "mmsi": "419000101",
+        "name": "ICGS Samudra Prahari",
+        "type": "Pollution Control Vessel",
+        "home_port": "Mumbai",
+        "lat": 18.95,
+        "lon": 72.85
+    },
+    {
+        "mmsi": "419000102",
+        "name": "ICGS Samudra Paheredar",
+        "type": "Pollution Control Vessel",
+        "home_port": "Mumbai",
+        "lat": 18.90,
+        "lon": 72.80
+    },
+    {
+        "mmsi": "419000103",
+        "name": "ICGS Varuna",
+        "type": "Patrol Vessel",
+        "home_port": "Chennai",
+        "lat": 13.12,
+        "lon": 80.32
+    },
+    {
+        "mmsi": "419000104",
+        "name": "ICGS Vikram",
+        "type": "Patrol Vessel",
+        "home_port": "Chennai",
+        "lat": 13.08,
+        "lon": 80.30
+    },
+    {
+        "mmsi": "419000105",
+        "name": "ICGS Rani Abbakka",
+        "type": "Patrol Vessel",
+        "home_port": "Karwar",
+        "lat": 14.81,
+        "lon": 74.12
+    },
+    {
+        "mmsi": "419000106",
+        "name": "ICGS Shaunak",
+        "type": "Patrol Vessel",
+        "home_port": "Kolkata",
+        "lat": 22.55,
+        "lon": 88.32
+    },
+    {
+        "mmsi": "419000107",
+        "name": "ICGS Rajveer",
+        "type": "Patrol Vessel",
+        "home_port": "Haldia",
+        "lat": 22.06,
+        "lon": 88.09
+    },
+    {
+        "mmsi": "419000108",
+        "name": "ICGS Savitribai Phule",
+        "type": "Patrol Vessel",
+        "home_port": "Kandla",
+        "lat": 22.99,
+        "lon": 70.22
+    },
+    {
+        "mmsi": "419000109",
+        "name": "ICGS Arnvesh",
+        "type": "Patrol Vessel",
+        "home_port": "Paradip",
+        "lat": 20.26,
+        "lon": 86.66
+    },
+    {
+        "mmsi": "419000110",
+        "name": "ICGS Sujay",
+        "type": "Patrol Vessel",
+        "home_port": "Port Blair",
+        "lat": 11.66,
+        "lon": 92.73
+    },
+    {
+        "mmsi": "419000111",
+        "name": "ICGS Ayush",
+        "type": "Patrol Vessel",
+        "home_port": "Kochi",
+        "lat": 9.96,
+        "lon": 76.24
+    },
+    {
+        "mmsi": "419000112",
+        "name": "ICGS C-145",
+        "type": "Tug",
+        "home_port": "Tuticorin",
+        "lat": 8.75,
+        "lon": 78.19
+    }
+]

@@ -1,0 +1,152 @@
+[
+    {
+        "id": "ICG-CHN-01",
+        "name": "Coast Guard Station Chennai",
+        "region": "Tamil Nadu",
+        "lat": 13.10,
+        "lon": 80.30,
+        "phone": "+91XXXXXXXXXX",
+        "response_radius_km": 250,
+        "command_centre": "Eastern Region (Chennai)"
+    },
+    {
+        "id": "ICG-CHN-02",
+        "name": "Coast Guard Air Station Chennai",
+        "region": "Tamil Nadu",
+        "lat": 12.99,
+        "lon": 80.17,
+        "phone": "+91XXXXXXXXXX",
+        "response_radius_km": 300,
+        "command_centre": "Eastern Region (Chennai)"
+    },
+    {
+        "id": "ICG-VZG-01",
+        "name": "Coast Guard Station Visakhapatnam",
+        "region": "Andhra Pradesh",
+        "lat": 17.69,
+        "lon": 83.28,
+        "phone": "+91XXXXXXXXXX",
+        "response_radius_km": 200,
+        "command_centre": "Eastern Region (Chennai)"
+    },
+    {
+        "id": "ICG-PDP-01",
+        "name": "Coast Guard Station Paradip",
+        "region": "Odisha",
+        "lat": 20.26,
+        "lon": 86.66,
+        "phone": "+91XXXXXXXXXX",
+        "response_radius_km": 200,
+        "command_centre": "North-East Region (Kolkata)"
+    },
+    {
+        "id": "ICG-HLD-01",
+        "name": "Coast Guard Station Haldia",
+        "region": "West Bengal",
+        "lat": 22.06,
+        "lon": 88.09,
+        "phone": "+91XXXXXXXXXX",
+        "response_radius_km": 150,
+        "command_centre": "North-East Region (Kolkata)"
+    },
+    {
+        "id": "ICG-KOL-01",
+        "name": "Coast Guard Station Kolkata",
+        "region": "West Bengal",
+        "lat": 22.55,
+        "lon": 88.30,
+        "phone": "+91XXXXXXXXXX",
+        "response_radius_km": 200,
+        "command_centre": "North-East Region (Kolkata)"
+    },
+    {
+        "id": "ICG-MUM-01",
+        "name": "Coast Guard Station Mumbai",
+        "region": "Maharashtra",
+        "lat": 18.92,
+        "lon": 72.83,
+        "phone": "+91XXXXXXXXXX",
+        "response_radius_km": 250,
+        "command_centre": "Western Region (Mumbai)"
+    },
+    {
+        "id": "ICG-MUM-02",
+        "name": "Coast Guard Air Station Mumbai",
+        "region": "Maharashtra",
+        "lat": 19.09,
+        "lon": 72.86,
+        "phone": "+91XXXXXXXXXX",
+        "response_radius_km": 350,
+        "command_centre": "Western Region (Mumbai)"
+    },
+    {
+        "id": "ICG-JNP-01",
+        "name": "Coast Guard Station JNPT",
+        "region": "Maharashtra",
+        "lat": 18.95,
+        "lon": 72.95,
+        "phone": "+91XXXXXXXXXX",
+        "response_radius_km": 150,
+        "command_centre": "Western Region (Mumbai)"
+    },
+    {
+        "id": "ICG-KDL-01",
+        "name": "Coast Guard Station Kandla",
+        "region": "Gujarat",
+        "lat": 22.99,
+        "lon": 70.22,
+        "phone": "+91XXXXXXXXXX",
+        "response_radius_km": 200,
+        "command_centre": "North-West Region (Gandhinagar)"
+    },
+    {
+        "id": "ICG-MNG-01",
+        "name": "Coast Guard Station Mangaluru",
+        "region": "Karnataka",
+        "lat": 12.86,
+        "lon": 74.83,
+        "phone": "+91XXXXXXXXXX",
+        "response_radius_km": 200,
+        "command_centre": "Western Region (Mumbai)"
+    },
+    {
+        "id": "ICG-KOC-01",
+        "name": "Coast Guard Station Kochi",
+        "region": "Kerala",
+        "lat": 9.96,
+        "lon": 76.24,
+        "phone": "+91XXXXXXXXXX",
+        "response_radius_km": 200,
+        "command_centre": "Western Region (Mumbai)"
+    },
+    {
+        "id": "ICG-TUT-01",
+        "name": "Coast Guard Station Tuticorin",
+        "region": "Tamil Nadu",
+        "lat": 8.75,
+        "lon": 78.19,
+        "phone": "+91XXXXXXXXXX",
+        "response_radius_km": 180,
+        "command_centre": "Eastern Region (Chennai)"
+    },
+    {
+        "id": "ICG-PBL-01",
+        "name": "Coast Guard Station Port Blair",
+        "region": "Andaman & Nicobar",
+        "lat": 11.66,
+        "lon": 92.73,
+        "phone": "+91XXXXXXXXXX",
+        "response_radius_km": 400,
+        "command_centre": "Andaman & Nicobar Region (Port Blair)"
+    },
+    {
+        "id": "ICG-GOA-01",
+        "name": "Coast Guard Station Goa",
+        "region": "Goa",
+        "lat": 15.49,
+        "lon": 73.79,
+        "phone": "+91XXXXXXXXXX",
+        "response_radius_km": 200,
+        "command_centre": "Western Region (Mumbai)"
+    }
+]
