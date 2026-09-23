@@ -67,3 +67,6 @@ Thumbs.db
 .idea/
 # Phase 8 — runtime artifacts
 backend/notification/alerts.db
+
+# Runtime output / crops
+data/phase1_crops/
