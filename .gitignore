@@ -50,7 +50,6 @@ yarn-error.log*
 *.h5
 
 # Heavy Datasets
-data/csiro/csiro_patches/
 data/fp_filter/csiro_patches/
 data/fp_filter/era5_cache/
 *.zip

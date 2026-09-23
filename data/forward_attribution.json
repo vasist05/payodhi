@@ -1,0 +1,35 @@
+{
+  "spill_id": "22222222-2222-2222-2222-222222222222",
+  "ranked_candidates": [
+    {
+      "mmsi": "111111111",
+      "vessel_name": "MT SANMAR SONATA",
+      "forward_score": 0.5936017392827555,
+      "distance_km": 12.191947821517335,
+      "predicted_centroid": [
+        72.45281219482422,
+        20.899600982666016
+      ],
+      "release_time": "2024-06-15 05:30:00+00:00",
+      "oil_type": "GENERIC HEAVY CRUDE"
+    },
+    {
+      "mmsi": "222222222",
+      "vessel_name": "MT OCEAN PRIDE",
+      "forward_score": 0.3809370829843407,
+      "distance_km": 18.57188751046978,
+      "predicted_centroid": [
+        72.32247161865234,
+        20.979421615600586
+      ],
+      "release_time": "2024-06-15 08:00:00+00:00",
+      "oil_type": "GENERIC MEDIUM CRUDE"
+    }
+  ],
+  "attribution_outcome": {
+    "outcome": "STRONG",
+    "reason": "Top score 0.59"
+  },
+  "n_candidates": 2,
+  "created_at": "2026-09-23T06:33:25.761920+00:00"
+}

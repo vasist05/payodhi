@@ -1,0 +1,31 @@
+[
+    {
+        "scene_id": "scene_001",
+        "sar_source": "Sentinel-1",
+        "timestamp": "2024-06-15T14:00:00Z",
+        "footprint": [
+            [
+                71.5,
+                20.5
+            ],
+            [
+                73.5,
+                20.5
+            ],
+            [
+                73.5,
+                21.5
+            ],
+            [
+                71.5,
+                21.5
+            ],
+            [
+                71.5,
+                20.5
+            ]
+        ],
+        "image_path": "/mock/sentinel1_20240615.tif",
+        "image_hash": "abc123def456"
+    }
+]

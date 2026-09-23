@@ -1,0 +1,26 @@
+[
+    {
+        "mmsi": "111111111",
+        "imo": "IMO9000001",
+        "vessel_name": "MT MOCK ALPHA",
+        "vessel_type": "Oil tanker",
+        "flag": "IN",
+        "declared_cargo": "crude_oil"
+    },
+    {
+        "mmsi": "222222222",
+        "imo": "IMO9000002",
+        "vessel_name": "MT MOCK BRAVO",
+        "vessel_type": "Chemical carrier",
+        "flag": "PA",
+        "declared_cargo": "diesel"
+    },
+    {
+        "mmsi": "333333333",
+        "imo": "IMO9000003",
+        "vessel_name": "MT MOCK CHARLIE",
+        "vessel_type": "Oil tanker",
+        "flag": "IN",
+        "declared_cargo": "crude_oil"
+    }
+]
