@@ -2,27 +2,249 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================================
+   TACTICAL COMMAND THEME — Deep Navy + Electric Cyan
+   ============================================================ */
 @layer base {
   * {
-    border-color: #243247;
+    border-color: #1e293b;
+  }
+  html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
   body {
-    background-color: #0a0e17;
-    color: #f1f5f9;
+    background-color: #050810;
+    color: #e2e8f0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow: hidden;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
   }
 }
 
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+.glass-panel {
+  background: rgba(10, 15, 26, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(6, 182, 212, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(6, 182, 212, 0.05);
 }
-::-webkit-scrollbar-track {
-  background: #0d131f;
+
+.glass-panel-strong {
+  background: rgba(10, 15, 26, 0.97);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(6, 182, 212, 0.28);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(6, 182, 212, 0.08);
 }
-::-webkit-scrollbar-thumb {
-  background: #243247;
-  border-radius: 3px;
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(30, 41, 59, 0.8);
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #3b82f6;
+
+.glass-card:hover {
+  border-color: rgba(6, 182, 212, 0.5);
+  box-shadow: 0 0 20px -3px rgba(6, 182, 212, 0.25);
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #0a0f1a; }
+::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #06b6d4; }
+
+.leaflet-container { background: #050810 !important; font-family: inherit; height: 100%; width: 100%; }
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: #0a0f1a !important; color: #e2e8f0 !important;
+  border: 1px solid #1e293b;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.9); border-radius: 8px;
+}
+.leaflet-popup-content { margin: 12px 14px !important; line-height: 1.4 !important; }
+.leaflet-popup-close-button { color: #94a3b8 !important; }
+.leaflet-popup-close-button:hover { color: #ffffff !important; }
+.leaflet-tooltip {
+  background: rgba(10, 15, 26, 0.97) !important; border: 1px solid #1e293b !important;
+  color: #e2e8f0 !important; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6) !important;
+  border-radius: 6px !important; padding: 4px 8px !important; font-size: 11px !important;
+  font-family: 'JetBrains Mono', monospace !important;
+}
+.leaflet-tooltip-top:before, .leaflet-tooltip-bottom:before, .leaflet-tooltip-left:before, .leaflet-tooltip-right:before {
+  border-top-color: #1e293b !important; border-bottom-color: #1e293b !important;
+  border-left-color: #1e293b !important; border-right-color: #1e293b !important;
+}
+.leaflet-control-attribution { display: none !important; }
+.custom-vessel-marker { background: transparent !important; border: none !important; }
+
+@keyframes ring-pulse { 0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.7); } 70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(225, 29, 72, 0); } 100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(225, 29, 72, 0); } }
+@keyframes scanline { 0% { top: 0%; } 100% { top: 100%; } }
+@keyframes tickerScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+@keyframes demoPulse { 0%, 100% { border-color: rgba(245,158,11,0.5); box-shadow: 0 0 0 0 rgba(245,158,11,0); } 50% { border-color: rgba(245,158,11,1); box-shadow: 0 0 10px 2px rgba(245,158,11,0.25); } }
+@keyframes checkPop {
+  0% { transform: scale(0.4); opacity: 0; }
+  65% { transform: scale(1.22); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 12px rgba(6, 182, 212, 0.4); }
+  50% { box-shadow: 0 0 24px rgba(6, 182, 212, 0.8), 0 0 6px rgba(255, 255, 255, 0.6); }
+}
+.pulsing-slick { animation: ring-pulse 2.5s infinite; }
+.animate-scanline { animation: scanline 2.5s linear infinite; }
+.animate-check-pop { animation: checkPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+.animate-pulse-glow { animation: pulseGlow 1.8s ease-in-out infinite; }
+
+/* ============================================================
+   DOSSIER / REPORTS — LIGHT PAPER + NAVY BLUE
+   ============================================================ */
+.dossier-page {
+  background: #fafaf7;
+  color: #0f172a;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.dossier-letterhead {
+  border-bottom: 3px double #1e3a8a;
+  padding-bottom: 12px;
+}
+
+.dossier-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 120px;
+  font-weight: 900;
+  color: rgba(30, 58, 138, 0.05);
+  letter-spacing: 0.2em;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+input[type="range"] { -webkit-appearance: none; appearance: none; background: transparent; cursor: pointer; }
+input[type="range"]::-webkit-slider-runnable-track { height: 6px; background: #1e293b; border-radius: 3px; }
+input[type="range"]::-moz-range-track { height: 6px; background: #1e293b; border-radius: 3px; }
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: #06b6d4; margin-top: -4px;
+  border: 2px solid #0a0f1a;
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.7);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 14px; height: 14px; border-radius: 50%;
+  background: #06b6d4; border: 2px solid #0a0f1a;
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.7);
+}
+select { color-scheme: dark; }
+select option { background-color: #0a0f1a; color: #e2e8f0; }
+
+.recharts-tooltip-wrapper { outline: none !important; }
+.recharts-default-tooltip {
+  background: #0a0f1a !important; border: 1px solid #1e293b !important;
+  border-radius: 8px !important; color: #e2e8f0 !important;
+}
+.recharts-cartesian-axis-tick-value { fill: #64748b; }
+.recharts-polar-grid-concentric-polygon { stroke: #1e293b; }
+
+/* ============================================================
+   PRINT — MULTI-PAGE SAFE
+   ============================================================ */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm 10mm 15mm 10mm;
+  }
+
+  html, body, #root {
+    background: #ffffff !important;
+    overflow: visible !important;
+    height: auto !important;
+    min-height: 0 !important;
+    position: static !important;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  .dossier-print-target,
+  .dossier-print-target * {
+    visibility: visible;
+  }
+
+  .dossier-print-target {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    overflow: visible !important;
+  }
+
+  .dossier-page {
+    box-shadow: none !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    height: auto !important;
+    page-break-inside: auto;
+  }
+
+  .dossier-page > div {
+    overflow: visible !important;
+  }
+
+  .dossier-page .avoid-break {
+    page-break-inside: avoid;
+  }
+
+  .no-print,
+  button.no-print,
+  .no-print * {
+    display: none !important;
+  }
+
+  .dossier-classification {
+    background: #1e3a8a !important;
+    color: #ffffff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .dossier-section-number,
+  .dossier-page [style*="background: #1e40af"],
+  .dossier-page [style*="background: #10b981"],
+  .dossier-page [style*="background: #f59e0b"] {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .dossier-table th {
+    background: #1e3a8a !important;
+    color: #ffffff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .dossier-watermark {
+    color: rgba(30, 58, 138, 0.06) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  aside, nav, header, footer {
+    display: none !important;
+  }
 }
