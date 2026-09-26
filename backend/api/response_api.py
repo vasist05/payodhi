@@ -32,12 +32,19 @@ from backend.notification.geo_utils import (
 )
 from backend.notification.response_engine import (
     DB_PATH,
+    _init_db,
     _load_fallback_vessels,
     _load_stations,
     dispatch_response,
 )
 
 logger = logging.getLogger(__name__)
+
+# Ensure SQLite alerts table and indexes exist on API startup
+try:
+    _init_db()
+except Exception as exc:
+    logger.warning("Could not pre-initialize alerts database: %s", exc)
 
 router = APIRouter(tags=["phase8"])
 

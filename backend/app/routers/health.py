@@ -24,6 +24,7 @@ router = APIRouter(tags=["health"])
 
 
 @router.get("/health", status_code=status.HTTP_200_OK)
+@router.get("/api/health", status_code=status.HTTP_200_OK)
 async def health_check(
     session: AsyncSession = Depends(get_session),
 ) -> dict[str, Any]:

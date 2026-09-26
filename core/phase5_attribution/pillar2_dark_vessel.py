@@ -246,8 +246,8 @@ if __name__ == "__main__":
         spill_time=spill_timestamp,
         coastline_distance_nm=20.0,
     )
-    print(f"Dark Vessel Score : {res1["dark_vessel_score"]}")
-    print(f"Reason            : {res1["reason"]}")
+    print(f"Dark Vessel Score : {res1['dark_vessel_score']}")
+    print(f"Reason            : {res1['reason']}")
     print("Gap Details:")
     print(json.dumps(res1["gaps"], indent=2, default=str))
 
@@ -258,8 +258,8 @@ if __name__ == "__main__":
         spill_time=spill_timestamp,
         coastline_distance_nm=3.0,
     )
-    print(f"Dark Vessel Score : {res2["dark_vessel_score"]}")
-    print(f"Reason            : {res2["reason"]}")
+    print(f"Dark Vessel Score : {res2['dark_vessel_score']}")
+    print(f"Reason            : {res2['reason']}")
 
     print("\n[Scenario 3: Anomaly / AIS Spoofing speed jump (>30 knots)]")
     spoof_track = [
@@ -270,8 +270,8 @@ if __name__ == "__main__":
         vessel_track=spoof_track,
         spill_center=spill_loc,
     )
-    print(f"Dark Vessel Score : {res3["dark_vessel_score"]}")
-    print(f"Reason            : {res3["reason"]}")
+    print(f"Dark Vessel Score : {res3['dark_vessel_score']}")
+    print(f"Reason            : {res3['reason']}")
 
     print("\n" + "=" * 70)
     print("Execution complete: Pillar 2 algorithm running successfully.")
