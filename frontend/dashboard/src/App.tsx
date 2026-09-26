@@ -253,16 +253,14 @@ const DEMO_INCIDENT: IncidentCase = {
   severity: 'CRITICAL',
 };
 
-const INCIDENT_CASES: IncidentCase[] = [
-  DEMO_INCIDENT,
-  {
-    id: 'chennai-2017',
-    title: 'Chennai / Ennore Tanker Collision (2017)',
-    regionName: 'Ennore Outer Fairway · Bay of Bengal (10nm Offshore)',
-    incidentDate: '2017-01-28',
-    detectionTimestamp: '2017-01-28T12:00:00Z',
-    estimatedReleaseWindow: {
-      start: '2017-01-28T04:00:00Z', end: '2017-01-28T05:30:00Z',
+const CHENNAI_INCIDENT: IncidentCase = {
+  id: 'chennai-2017',
+  title: 'Chennai / Ennore Tanker Collision',
+  regionName: 'Ennore Outer Fairway · Bay of Bengal (10nm Offshore)',
+  incidentDate: '2017-01-28',
+  detectionTimestamp: '2017-01-28T12:00:00Z',
+  estimatedReleaseWindow: {
+    start: '2017-01-28T04:00:00Z', end: '2017-01-28T05:30:00Z',
       hoursBeforeDetection: 7.5,
     },
     centerLat: 13.325, centerLon: 80.435, zoomLevel: 12,
@@ -355,13 +353,16 @@ const INCIDENT_CASES: IncidentCase[] = [
         disqualificationReasons: ['No historical trajectory (no transponder)'],
         track: [
           { lat: 13.370, lon: 80.475, timestamp: '2017-01-28T03:30:00Z', sogKnots: 1.8, cogDegrees: 180 },
-          { lat: 13.355, lon: 80.478, timestamp: '2017-01-28T12:00:00Z', sogKnots: 1.5, cogDegrees: 175 },
         ],
       },
     ],
     summaryNotes: 'Clear attribution identifying MT Dawn Kanchipuram as the primary source.',
     severity: 'CRITICAL',
-  },
+};
+
+const INCIDENT_CASES: IncidentCase[] = [
+  CHENNAI_INCIDENT,
+  DEMO_INCIDENT,
   {
     id: 'mumbai-2023',
     title: 'Mumbai High Offshore Incident',
@@ -2502,28 +2503,25 @@ const Navbar: React.FC<NavbarProps> = ({
       </div>
     </div>
 
-    {/* ── ALL INCIDENT CASES SELECTOR (Prominent Dropdown) ── */}
-    <div className="flex-1 max-w-xl mx-4 hidden sm:block">
-      <div className="flex items-center bg-slate-800/80 border border-slate-700/80 hover:border-cyan-500/60 rounded-xl px-3 py-1.5 transition-all shadow-md">
-        <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider mr-2 flex items-center gap-1.5 whitespace-nowrap">
-          <MapPin className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
-          <span>CASE:</span>
-        </span>
+    {/* ── ALL INCIDENT CASES SELECTOR (Exact Pill Style from Demo / Screenshot) ── */}
+    <div className="flex-1 max-w-md mx-4 hidden lg:block">
+      <div className="flex items-center bg-slate-800/60 border border-slate-700/60 rounded-lg px-3 py-1.5 hover:border-cyan-500/60 transition-all">
+        <span className="text-[10px] text-slate-500 font-bold uppercase mr-2">CASE</span>
         <select
           value={selectedIncident.id}
           onChange={(e) => {
             const found = allIncidents.find((i) => i.id === e.target.value);
             if (found) onSelectIncident(found);
           }}
-          className="bg-transparent text-cyan-300 font-bold text-xs focus:outline-none cursor-pointer flex-1 truncate font-mono"
+          className="bg-transparent text-[11px] text-cyan-300 font-bold focus:outline-none cursor-pointer flex-1 truncate"
         >
           {allIncidents.map((inc) => (
             <option
               key={inc.id}
               value={inc.id}
-              className="bg-slate-900 text-slate-100 py-1"
+              className="bg-slate-900 text-cyan-300 font-bold py-1"
             >
-              {inc.title} — {inc.regionName.split('·')[0].trim()}
+              {inc.title}
             </option>
           ))}
         </select>

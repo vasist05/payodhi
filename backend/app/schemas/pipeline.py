@@ -6,7 +6,7 @@ Pydantic schemas for the Unified Phase 1 + 2 + 3 End-to-End Maritime Oil Spill P
 
 from __future__ import annotations
 
-from typing import Any, List, Literal, Optional
+from typing import Any, Dict, List, Literal, Optional
 from uuid import UUID
 
 from pydantic import BaseModel, Field
