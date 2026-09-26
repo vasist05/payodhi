@@ -223,3 +223,56 @@ def detect_dark_window(
         "gaps": gaps,
         "reason": reason,
     }
+
+
+if __name__ == "__main__":
+    import json
+
+    print("=" * 70)
+    print("PAYODHI — PILLAR 2: DARK VESSEL & AIS GAP DETECTION")
+    print("=" * 70)
+
+    spill_loc = {"lat": 18.0, "lon": 72.0}
+    spill_timestamp = datetime(2026, 9, 21, 10, 30, 0, tzinfo=timezone.utc)
+    vessel_trajectory = [
+        {"lat": 17.95, "lon": 72.0, "time": datetime(2026, 9, 21, 10, 10, 0, tzinfo=timezone.utc)},
+        {"lat": 18.05, "lon": 72.0, "time": datetime(2026, 9, 21, 10, 50, 0, tzinfo=timezone.utc)},
+    ]
+
+    print("\n[Scenario 1: Open-ocean transponder gap (40 min) overlapping spill]")
+    res1 = detect_dark_window(
+        vessel_track=vessel_trajectory,
+        spill_center=spill_loc,
+        spill_time=spill_timestamp,
+        coastline_distance_nm=20.0,
+    )
+    print(f"Dark Vessel Score : {res1["dark_vessel_score"]}")
+    print(f"Reason            : {res1["reason"]}")
+    print("Gap Details:")
+    print(json.dumps(res1["gaps"], indent=2, default=str))
+
+    print("\n[Scenario 2: Coastal departure gap (<= 5 nm from coast, half weight)]")
+    res2 = detect_dark_window(
+        vessel_track=vessel_trajectory,
+        spill_center=spill_loc,
+        spill_time=spill_timestamp,
+        coastline_distance_nm=3.0,
+    )
+    print(f"Dark Vessel Score : {res2["dark_vessel_score"]}")
+    print(f"Reason            : {res2["reason"]}")
+
+    print("\n[Scenario 3: Anomaly / AIS Spoofing speed jump (>30 knots)]")
+    spoof_track = [
+        {"lat": 18.0, "lon": 72.0, "time": datetime(2026, 9, 21, 10, 0, 0, tzinfo=timezone.utc)},
+        {"lat": 19.0, "lon": 72.0, "time": datetime(2026, 9, 21, 10, 30, 0, tzinfo=timezone.utc)},
+    ]
+    res3 = detect_dark_window(
+        vessel_track=spoof_track,
+        spill_center=spill_loc,
+    )
+    print(f"Dark Vessel Score : {res3["dark_vessel_score"]}")
+    print(f"Reason            : {res3["reason"]}")
+
+    print("\n" + "=" * 70)
+    print("Execution complete: Pillar 2 algorithm running successfully.")
+    print("=" * 70)

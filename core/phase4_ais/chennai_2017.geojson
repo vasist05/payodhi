@@ -1,0 +1,7620 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.35,
+          13.25
+        ]
+      },
+      "properties": {
+        "entity_type": "spill_origin",
+        "status": "SPILL",
+        "name": "Reported Oil Spill Origin",
+        "description": "Centroid of detected oil slick from SAR analysis",
+        "marker_color": "#FF3B30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.525,
+          13.0
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 2,
+        "status": "MATCHED",
+        "name": "JEWEL OF DUBAI",
+        "mmsi": "370326000",
+        "imo": "9419943",
+        "flag": "PAN",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 3.95,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.52999877929688,
+            12.68
+          ],
+          [
+            80.47000122070312,
+            12.97
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.44000244140625,
+            13.04
+          ],
+          [
+            80.44000244140625,
+            13.07
+          ],
+          [
+            80.70999908447266,
+            12.91
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.9000015258789,
+            12.8
+          ],
+          [
+            80.58999633789062,
+            12.56
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.55999755859375,
+            12.99
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "JEWEL OF DUBAI",
+        "mmsi": "370326000",
+        "num_waypoints": 13,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.54,
+          13.0
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 3,
+        "status": "MATCHED",
+        "name": "JEWEL OF DUBAI",
+        "mmsi": "370326000",
+        "imo": "9419943",
+        "flag": "PAN",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 2.44,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.52999877929688,
+            12.68
+          ],
+          [
+            80.47000122070312,
+            12.97
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.44000244140625,
+            13.04
+          ],
+          [
+            80.44000244140625,
+            13.07
+          ],
+          [
+            80.70999908447266,
+            12.91
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.9000015258789,
+            12.8
+          ],
+          [
+            80.58999633789062,
+            12.56
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.55999755859375,
+            12.99
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "JEWEL OF DUBAI",
+        "mmsi": "370326000",
+        "num_waypoints": 13,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.555,
+          13.0
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 4,
+        "status": "MATCHED",
+        "name": "JEWEL OF DUBAI",
+        "mmsi": "370326000",
+        "imo": "9419943",
+        "flag": "PAN",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 1.24,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.52999877929688,
+            12.68
+          ],
+          [
+            80.47000122070312,
+            12.97
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.44000244140625,
+            13.04
+          ],
+          [
+            80.44000244140625,
+            13.07
+          ],
+          [
+            80.70999908447266,
+            12.91
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.9000015258789,
+            12.8
+          ],
+          [
+            80.58999633789062,
+            12.56
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.55999755859375,
+            12.99
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "JEWEL OF DUBAI",
+        "mmsi": "370326000",
+        "num_waypoints": 13,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.585,
+          13.0
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 5,
+        "status": "MATCHED",
+        "name": "EURO MAX",
+        "mmsi": "636090874",
+        "imo": "9232773",
+        "flag": "LBR",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 1.24,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.45999908447266,
+            13.06
+          ],
+          [
+            80.93000030517578,
+            12.86
+          ],
+          [
+            80.4000015258789,
+            13.08
+          ],
+          [
+            80.58999633789062,
+            13.01
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "EURO MAX",
+        "mmsi": "636090874",
+        "num_waypoints": 5,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.595,
+          13.0
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 6,
+        "status": "MATCHED",
+        "name": "EURO MAX",
+        "mmsi": "636090874",
+        "imo": "9232773",
+        "flag": "LBR",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 1.24,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.45999908447266,
+            13.06
+          ],
+          [
+            80.93000030517578,
+            12.86
+          ],
+          [
+            80.4000015258789,
+            13.08
+          ],
+          [
+            80.58999633789062,
+            13.01
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "EURO MAX",
+        "mmsi": "636090874",
+        "num_waypoints": 5,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.585,
+          13.005
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 7,
+        "status": "MATCHED",
+        "name": "EURO MAX",
+        "mmsi": "636090874",
+        "imo": "9232773",
+        "flag": "LBR",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.78,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.45999908447266,
+            13.06
+          ],
+          [
+            80.93000030517578,
+            12.86
+          ],
+          [
+            80.4000015258789,
+            13.08
+          ],
+          [
+            80.58999633789062,
+            13.01
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "EURO MAX",
+        "mmsi": "636090874",
+        "num_waypoints": 5,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.595,
+          13.015
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 8,
+        "status": "MATCHED",
+        "name": "EURO MAX",
+        "mmsi": "636090874",
+        "imo": "9232773",
+        "flag": "LBR",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.78,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.45999908447266,
+            13.06
+          ],
+          [
+            80.93000030517578,
+            12.86
+          ],
+          [
+            80.4000015258789,
+            13.08
+          ],
+          [
+            80.58999633789062,
+            13.01
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "EURO MAX",
+        "mmsi": "636090874",
+        "num_waypoints": 5,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.595,
+          13.025
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 9,
+        "status": "MATCHED",
+        "name": "EURO MAX",
+        "mmsi": "636090874",
+        "imo": "9232773",
+        "flag": "LBR",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 1.75,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.45999908447266,
+            13.06
+          ],
+          [
+            80.93000030517578,
+            12.86
+          ],
+          [
+            80.4000015258789,
+            13.08
+          ],
+          [
+            80.58999633789062,
+            13.01
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "EURO MAX",
+        "mmsi": "636090874",
+        "num_waypoints": 5,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.555,
+          13.035
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 10,
+        "status": "MATCHED",
+        "name": "ALLCARGO LAXMI",
+        "mmsi": "419000191",
+        "imo": "9008067",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.78,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.30999755859375,
+            13.11
+          ],
+          [
+            80.30999755859375,
+            13.11
+          ],
+          [
+            80.5,
+            13.18
+          ],
+          [
+            80.75,
+            13.55
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.36000061035156,
+            13.08
+          ],
+          [
+            80.44999694824219,
+            13.07
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.55999755859375,
+            13.04
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "ALLCARGO LAXMI",
+        "mmsi": "419000191",
+        "num_waypoints": 9,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.595,
+          13.035
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 11,
+        "status": "MATCHED",
+        "name": "EURO MAX",
+        "mmsi": "636090874",
+        "imo": "9232773",
+        "flag": "LBR",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 2.83,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.45999908447266,
+            13.06
+          ],
+          [
+            80.93000030517578,
+            12.86
+          ],
+          [
+            80.4000015258789,
+            13.08
+          ],
+          [
+            80.58999633789062,
+            13.01
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "EURO MAX",
+        "mmsi": "636090874",
+        "num_waypoints": 5,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.29,
+          13.05
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 12,
+        "status": "MATCHED",
+        "name": "C-415",
+        "mmsi": "419000556",
+        "imo": "4908054",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.0,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30999755859375,
+            13.1
+          ],
+          [
+            80.30999755859375,
+            13.11
+          ],
+          [
+            80.30999755859375,
+            13.13
+          ],
+          [
+            80.29000091552734,
+            13.07
+          ],
+          [
+            80.29000091552734,
+            13.07
+          ],
+          [
+            80.29000091552734,
+            13.06
+          ],
+          [
+            80.29000091552734,
+            13.05
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "C-415",
+        "mmsi": "419000556",
+        "num_waypoints": 9,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.48,
+          13.05
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 13,
+        "status": "MATCHED",
+        "name": "WAN HAI 508",
+        "mmsi": "565567000",
+        "imo": "9326419",
+        "flag": "SGP",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.0,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.7300033569336,
+            13.13
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.5999984741211,
+            13.2
+          ],
+          [
+            80.58000183105469,
+            13.0
+          ],
+          [
+            80.37000274658203,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.36000061035156,
+            13.3
+          ],
+          [
+            80.36000061035156,
+            13.31
+          ],
+          [
+            80.4800033569336,
+            13.05
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "WAN HAI 508",
+        "mmsi": "565567000",
+        "num_waypoints": 12,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.51,
+          13.05
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 14,
+        "status": "MATCHED",
+        "name": "SN QUEEN",
+        "mmsi": "371157000",
+        "imo": "",
+        "flag": "PAN",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.0,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.47000122070312,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.4000015258789,
+            13.14
+          ],
+          [
+            80.29000091552734,
+            13.09
+          ],
+          [
+            80.66999816894531,
+            13.0
+          ],
+          [
+            80.5999984741211,
+            13.28
+          ],
+          [
+            80.29000091552734,
+            13.09
+          ],
+          [
+            80.36000061035156,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.4000015258789,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.51000213623047,
+            13.05
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "SN QUEEN",
+        "mmsi": "371157000",
+        "num_waypoints": 13,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.47,
+          13.06
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 15,
+        "status": "MATCHED",
+        "name": "VIMC FREEDOM",
+        "mmsi": "574000160",
+        "imo": "9577317",
+        "flag": "VNM",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.0,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.36000061035156,
+            13.06
+          ],
+          [
+            80.98999786376953,
+            12.79
+          ],
+          [
+            80.36000061035156,
+            13.06
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.33999633789062,
+            13.1
+          ],
+          [
+            80.36000061035156,
+            13.07
+          ],
+          [
+            80.9000015258789,
+            12.9
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.36000061035156,
+            13.07
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.36000061035156,
+            13.06
+          ],
+          [
+            80.36000061035156,
+            13.06
+          ],
+          [
+            80.7699966430664,
+            12.95
+          ],
+          [
+            80.3499984741211,
+            13.1
+          ],
+          [
+            80.33999633789062,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.47000122070312,
+            13.06
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "VIMC FREEDOM",
+        "mmsi": "574000160",
+        "num_waypoints": 19,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.5,
+          13.06
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 16,
+        "status": "MATCHED",
+        "name": "THEA S",
+        "mmsi": "304449000",
+        "imo": "9232412",
+        "flag": "ATG",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.0,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.94999694824219,
+            12.83
+          ],
+          [
+            80.55000305175781,
+            13.04
+          ],
+          [
+            80.5,
+            13.06
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "THEA S",
+        "mmsi": "304449000",
+        "num_waypoints": 4,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.345,
+          13.07
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 17,
+        "status": "MATCHED",
+        "name": "ANNA SMILE",
+        "mmsi": "538002838",
+        "imo": "9280770",
+        "flag": "MHL",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.36000061035156,
+            13.07
+          ],
+          [
+            80.36000061035156,
+            13.07
+          ],
+          [
+            80.41000366210938,
+            12.84
+          ],
+          [
+            80.38999938964844,
+            12.9
+          ],
+          [
+            80.3499984741211,
+            13.07
+          ],
+          [
+            80.3499984741211,
+            13.07
+          ],
+          [
+            80.3499984741211,
+            13.07
+          ],
+          [
+            80.3499984741211,
+            13.07
+          ],
+          [
+            80.3499984741211,
+            13.07
+          ],
+          [
+            80.3499984741211,
+            13.07
+          ],
+          [
+            80.3499984741211,
+            13.05
+          ],
+          [
+            80.3499984741211,
+            13.07
+          ],
+          [
+            80.3499984741211,
+            13.07
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "ANNA SMILE",
+        "mmsi": "538002838",
+        "num_waypoints": 13,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.375,
+          13.07
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 18,
+        "status": "MATCHED",
+        "name": "SCI PANNA",
+        "mmsi": "419783000",
+        "imo": "9524889",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.37000274658203,
+            13.07
+          ],
+          [
+            80.37000274658203,
+            13.07
+          ],
+          [
+            80.37000274658203,
+            13.07
+          ],
+          [
+            80.37000274658203,
+            13.07
+          ],
+          [
+            80.37000274658203,
+            13.07
+          ],
+          [
+            80.37999725341797,
+            13.07
+          ],
+          [
+            80.37000274658203,
+            13.07
+          ],
+          [
+            80.37999725341797,
+            13.07
+          ],
+          [
+            80.37000274658203,
+            13.07
+          ],
+          [
+            80.37000274658203,
+            13.07
+          ],
+          [
+            80.37999725341797,
+            13.07
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "SCI PANNA",
+        "mmsi": "419783000",
+        "num_waypoints": 11,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.4,
+          13.07
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 19,
+        "status": "MATCHED",
+        "name": "MIKAWA",
+        "mmsi": "352882000",
+        "imo": "9354208",
+        "flag": "PAN",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.0,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.43000030517578,
+            12.77
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.72000122070312,
+            12.92
+          ],
+          [
+            80.37999725341797,
+            12.92
+          ],
+          [
+            80.30999755859375,
+            13.11
+          ],
+          [
+            80.88999938964844,
+            12.83
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.58999633789062,
+            12.98
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.47000122070312,
+            13.04
+          ],
+          [
+            80.37000274658203,
+            12.97
+          ],
+          [
+            80.4000015258789,
+            13.07
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "MIKAWA",
+        "mmsi": "352882000",
+        "num_waypoints": 13,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.36,
+          13.08
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 20,
+        "status": "MATCHED",
+        "name": "INCE AKDENIZ",
+        "mmsi": "271040406",
+        "imo": "9456460",
+        "flag": "TUR",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.0,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.41000366210938,
+            12.81
+          ],
+          [
+            80.36000061035156,
+            13.09
+          ],
+          [
+            80.3499984741211,
+            13.1
+          ],
+          [
+            80.36000061035156,
+            13.09
+          ],
+          [
+            80.37999725341797,
+            12.93
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.36000061035156,
+            13.09
+          ],
+          [
+            80.36000061035156,
+            13.09
+          ],
+          [
+            80.5,
+            12.62
+          ],
+          [
+            80.52999877929688,
+            12.55
+          ],
+          [
+            80.36000061035156,
+            13.08
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.36000061035156,
+            13.08
+          ],
+          [
+            80.36000061035156,
+            13.08
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "INCE AKDENIZ",
+        "mmsi": "271040406",
+        "num_waypoints": 15,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.375,
+          13.08
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 21,
+        "status": "MATCHED",
+        "name": "BW MERLIN",
+        "mmsi": "563484000",
+        "imo": "9682239",
+        "flag": "SGP",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.37000274658203,
+            13.08
+          ],
+          [
+            80.37999725341797,
+            13.08
+          ],
+          [
+            80.37000274658203,
+            13.08
+          ],
+          [
+            80.37999725341797,
+            13.08
+          ],
+          [
+            80.37999725341797,
+            13.08
+          ],
+          [
+            80.37999725341797,
+            13.08
+          ],
+          [
+            80.37999725341797,
+            13.08
+          ],
+          [
+            80.37000274658203,
+            13.08
+          ],
+          [
+            80.37000274658203,
+            13.08
+          ],
+          [
+            80.37999725341797,
+            13.08
+          ],
+          [
+            80.37999725341797,
+            13.08
+          ],
+          [
+            80.37999725341797,
+            13.08
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "BW MERLIN",
+        "mmsi": "563484000",
+        "num_waypoints": 12,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.4,
+          13.08
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 22,
+        "status": "MATCHED",
+        "name": "MOGRA",
+        "mmsi": "419001173",
+        "imo": "9191723",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.0,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.4000015258789,
+            13.08
+          ],
+          [
+            80.4000015258789,
+            13.08
+          ],
+          [
+            80.4000015258789,
+            13.08
+          ],
+          [
+            80.4000015258789,
+            13.08
+          ],
+          [
+            80.4000015258789,
+            13.08
+          ],
+          [
+            80.4000015258789,
+            13.08
+          ],
+          [
+            80.4000015258789,
+            13.08
+          ],
+          [
+            80.4000015258789,
+            13.08
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "MOGRA",
+        "mmsi": "419001173",
+        "num_waypoints": 8,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.415,
+          13.08
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 23,
+        "status": "MATCHED",
+        "name": "MSC SPRING III",
+        "mmsi": "636017239",
+        "imo": "9316359",
+        "flag": "LBR",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.41000366210938,
+            13.15
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.33999633789062,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.41999816894531,
+            13.08
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "MSC SPRING III",
+        "mmsi": "636017239",
+        "num_waypoints": 7,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.29,
+          13.085
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 24,
+        "status": "MATCHED",
+        "name": "OCEANFAME",
+        "mmsi": "419000122",
+        "imo": "9448542",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.33000183105469,
+            13.18
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.29000091552734,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.29000091552734,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.29000091552734,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.29000091552734,
+            13.09
+          ],
+          [
+            80.30999755859375,
+            13.13
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.29000091552734,
+            13.09
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "OCEANFAME",
+        "mmsi": "419000122",
+        "num_waypoints": 29,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.3,
+          13.085
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 25,
+        "status": "MATCHED",
+        "name": "NYK JOANNA",
+        "mmsi": "563119000",
+        "imo": "9387449",
+        "flag": "SGP",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.5,
+            13.19
+          ],
+          [
+            80.4000015258789,
+            13.11
+          ],
+          [
+            80.55000305175781,
+            13.22
+          ],
+          [
+            80.69000244140625,
+            13.15
+          ],
+          [
+            80.43000030517578,
+            13.12
+          ],
+          [
+            80.45999908447266,
+            13.14
+          ],
+          [
+            80.8499984741211,
+            13.07
+          ],
+          [
+            80.45999908447266,
+            13.08
+          ],
+          [
+            80.4800033569336,
+            13.19
+          ],
+          [
+            80.44999694824219,
+            13.27
+          ],
+          [
+            80.44999694824219,
+            13.27
+          ],
+          [
+            80.55000305175781,
+            13.04
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.47000122070312,
+            13.16
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.4800033569336,
+            13.16
+          ],
+          [
+            80.4800033569336,
+            13.21
+          ],
+          [
+            80.47000122070312,
+            13.15
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "NYK JOANNA",
+        "mmsi": "563119000",
+        "num_waypoints": 21,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.335,
+          13.085
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 26,
+        "status": "MATCHED",
+        "name": "CLI PRIDE",
+        "mmsi": "305689000",
+        "imo": "9513646",
+        "flag": "ATG",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.78,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.31999969482422,
+            13.11
+          ],
+          [
+            80.5999984741211,
+            12.89
+          ],
+          [
+            80.97000122070312,
+            12.58
+          ],
+          [
+            80.43000030517578,
+            12.89
+          ],
+          [
+            80.41000366210938,
+            13.05
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.33999633789062,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.3499984741211,
+            13.1
+          ],
+          [
+            80.38999938964844,
+            13.07
+          ],
+          [
+            80.33999633789062,
+            13.09
+          ],
+          [
+            80.3499984741211,
+            13.08
+          ],
+          [
+            80.75,
+            12.76
+          ],
+          [
+            80.91000366210938,
+            12.63
+          ],
+          [
+            80.33000183105469,
+            13.11
+          ],
+          [
+            80.33999633789062,
+            13.09
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "CLI PRIDE",
+        "mmsi": "305689000",
+        "num_waypoints": 16,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.37,
+          13.085
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 27,
+        "status": "MATCHED",
+        "name": "MSC KATALIN II",
+        "mmsi": "636017244",
+        "imo": "9232656",
+        "flag": "LBR",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.55000305175781,
+            12.85
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.4000015258789,
+            13.1
+          ],
+          [
+            80.41000366210938,
+            13.09
+          ],
+          [
+            80.5,
+            12.99
+          ],
+          [
+            80.31999969482422,
+            13.11
+          ],
+          [
+            80.37000274658203,
+            13.09
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "MSC KATALIN II",
+        "mmsi": "636017244",
+        "num_waypoints": 9,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.4,
+          13.085
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 28,
+        "status": "MATCHED",
+        "name": "DELTA SEA",
+        "mmsi": "477938100",
+        "imo": "9556739",
+        "flag": "HKG",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.4800033569336,
+            13.04
+          ],
+          [
+            80.3499984741211,
+            13.09
+          ],
+          [
+            80.3499984741211,
+            13.09
+          ],
+          [
+            80.4000015258789,
+            13.09
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "DELTA SEA",
+        "mmsi": "477938100",
+        "num_waypoints": 4,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.44,
+          13.085
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 29,
+        "status": "MATCHED",
+        "name": "DAWN KANCHIPURAM",
+        "mmsi": "419000988",
+        "imo": "9116917",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.43000030517578,
+            13.22
+          ],
+          [
+            80.3499984741211,
+            13.27
+          ],
+          [
+            80.43000030517578,
+            13.22
+          ],
+          [
+            80.36000061035156,
+            13.23
+          ],
+          [
+            80.37000274658203,
+            13.24
+          ],
+          [
+            80.3499984741211,
+            13.24
+          ],
+          [
+            80.38999938964844,
+            13.24
+          ],
+          [
+            80.45999908447266,
+            13.0
+          ],
+          [
+            80.37000274658203,
+            13.23
+          ],
+          [
+            80.38999938964844,
+            13.23
+          ],
+          [
+            80.38999938964844,
+            13.23
+          ],
+          [
+            80.48999786376953,
+            12.87
+          ],
+          [
+            80.37000274658203,
+            13.22
+          ],
+          [
+            80.43000030517578,
+            13.2
+          ],
+          [
+            80.38999938964844,
+            13.23
+          ],
+          [
+            80.44000244140625,
+            13.09
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "DAWN KANCHIPURAM",
+        "mmsi": "419000988",
+        "num_waypoints": 16,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.3,
+          13.095
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 31,
+        "status": "MATCHED",
+        "name": "ST SUCCESS",
+        "mmsi": "355232000",
+        "imo": "9472581",
+        "flag": "PAN",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.95999908447266,
+            13.96
+          ],
+          [
+            80.47000122070312,
+            13.25
+          ],
+          [
+            80.43000030517578,
+            13.06
+          ],
+          [
+            80.7300033569336,
+            12.91
+          ],
+          [
+            80.41000366210938,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.55999755859375,
+            13.41
+          ],
+          [
+            80.9000015258789,
+            13.87
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.62000274658203,
+            13.5
+          ],
+          [
+            80.77999877929688,
+            12.88
+          ],
+          [
+            80.43000030517578,
+            13.19
+          ],
+          [
+            80.7699966430664,
+            13.7
+          ],
+          [
+            80.4000015258789,
+            13.08
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "ST SUCCESS",
+        "mmsi": "355232000",
+        "num_waypoints": 16,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.3,
+          13.105
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 32,
+        "status": "MATCHED",
+        "name": "OCEAN PROBE",
+        "mmsi": "477240600",
+        "imo": "9108233",
+        "flag": "HKG",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.33999633789062,
+            13.11
+          ],
+          [
+            80.47000122070312,
+            13.84
+          ],
+          [
+            80.9000015258789,
+            13.0
+          ],
+          [
+            80.51000213623047,
+            13.28
+          ],
+          [
+            80.51000213623047,
+            12.52
+          ],
+          [
+            80.47000122070312,
+            12.66
+          ],
+          [
+            80.47000122070312,
+            13.77
+          ],
+          [
+            80.75,
+            13.33
+          ],
+          [
+            80.41999816894531,
+            13.14
+          ],
+          [
+            80.54000091552734,
+            13.8
+          ],
+          [
+            80.45999908447266,
+            13.94
+          ],
+          [
+            80.58000183105469,
+            13.7
+          ],
+          [
+            80.41000366210938,
+            13.14
+          ],
+          [
+            80.47000122070312,
+            13.49
+          ],
+          [
+            80.44999694824219,
+            14.0
+          ],
+          [
+            80.37999725341797,
+            12.94
+          ],
+          [
+            80.5199966430664,
+            13.53
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.83000183105469,
+            13.12
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "OCEAN PROBE",
+        "mmsi": "477240600",
+        "num_waypoints": 22,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.305,
+          13.105
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 33,
+        "status": "MATCHED",
+        "name": "OCEAN PROBE",
+        "mmsi": "477240600",
+        "imo": "9108233",
+        "flag": "HKG",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.78,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.33999633789062,
+            13.11
+          ],
+          [
+            80.47000122070312,
+            13.84
+          ],
+          [
+            80.9000015258789,
+            13.0
+          ],
+          [
+            80.51000213623047,
+            13.28
+          ],
+          [
+            80.51000213623047,
+            12.52
+          ],
+          [
+            80.47000122070312,
+            12.66
+          ],
+          [
+            80.47000122070312,
+            13.77
+          ],
+          [
+            80.75,
+            13.33
+          ],
+          [
+            80.41999816894531,
+            13.14
+          ],
+          [
+            80.54000091552734,
+            13.8
+          ],
+          [
+            80.45999908447266,
+            13.94
+          ],
+          [
+            80.58000183105469,
+            13.7
+          ],
+          [
+            80.41000366210938,
+            13.14
+          ],
+          [
+            80.47000122070312,
+            13.49
+          ],
+          [
+            80.44999694824219,
+            14.0
+          ],
+          [
+            80.37999725341797,
+            12.94
+          ],
+          [
+            80.5199966430664,
+            13.53
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.83000183105469,
+            13.12
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "OCEAN PROBE",
+        "mmsi": "477240600",
+        "num_waypoints": 22,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.315,
+          13.105
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 34,
+        "status": "MATCHED",
+        "name": "SONGA PRIDE",
+        "mmsi": "538006302",
+        "imo": "9693824",
+        "flag": "MHL",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.78,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.41000366210938,
+            13.77
+          ],
+          [
+            80.5199966430664,
+            12.67
+          ],
+          [
+            80.45999908447266,
+            13.33
+          ],
+          [
+            80.43000030517578,
+            12.86
+          ],
+          [
+            80.41000366210938,
+            13.16
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.38999938964844,
+            13.08
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.44999694824219,
+            13.53
+          ],
+          [
+            80.37000274658203,
+            13.96
+          ],
+          [
+            80.38999938964844,
+            13.09
+          ],
+          [
+            80.36000061035156,
+            13.13
+          ],
+          [
+            80.31999969482422,
+            13.11
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "SONGA PRIDE",
+        "mmsi": "538006302",
+        "num_waypoints": 14,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.33,
+          13.105
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 35,
+        "status": "MATCHED",
+        "name": "MT TULIP",
+        "mmsi": "419000962",
+        "imo": "9240914",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.33999633789062,
+            13.1
+          ],
+          [
+            80.61000061035156,
+            12.78
+          ],
+          [
+            80.41000366210938,
+            13.07
+          ],
+          [
+            80.5,
+            12.98
+          ],
+          [
+            80.55999755859375,
+            12.91
+          ],
+          [
+            80.41000366210938,
+            13.07
+          ],
+          [
+            80.48999786376953,
+            13.03
+          ],
+          [
+            80.4000015258789,
+            13.07
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.45999908447266,
+            12.85
+          ],
+          [
+            80.33000183105469,
+            13.1
+          ],
+          [
+            80.33000183105469,
+            13.11
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "MT TULIP",
+        "mmsi": "419000962",
+        "num_waypoints": 14,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.385,
+          13.105
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 36,
+        "status": "MATCHED",
+        "name": "HONG HAO",
+        "mmsi": "355887000",
+        "imo": "9568457",
+        "flag": "PAN",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.78,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.4000015258789,
+            13.3
+          ],
+          [
+            80.44999694824219,
+            13.07
+          ],
+          [
+            80.44999694824219,
+            13.07
+          ],
+          [
+            80.44000244140625,
+            13.09
+          ],
+          [
+            80.43000030517578,
+            13.08
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.5,
+            12.85
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.29000091552734,
+            13.09
+          ],
+          [
+            80.29000091552734,
+            13.09
+          ],
+          [
+            80.43000030517578,
+            13.26
+          ],
+          [
+            80.41000366210938,
+            13.28
+          ],
+          [
+            80.33999633789062,
+            13.12
+          ],
+          [
+            80.47000122070312,
+            12.96
+          ],
+          [
+            80.29000091552734,
+            13.09
+          ],
+          [
+            80.38999938964844,
+            13.11
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "HONG HAO",
+        "mmsi": "355887000",
+        "num_waypoints": 17,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.43,
+          13.105
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 37,
+        "status": "MATCHED",
+        "name": "MANIFESTO",
+        "mmsi": "566692000",
+        "imo": "9625152",
+        "flag": "SGP",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.41000366210938,
+            13.22
+          ],
+          [
+            80.41000366210938,
+            13.22
+          ],
+          [
+            80.41000366210938,
+            13.22
+          ],
+          [
+            80.48999786376953,
+            12.88
+          ],
+          [
+            80.41000366210938,
+            13.22
+          ],
+          [
+            80.41000366210938,
+            13.22
+          ],
+          [
+            80.41000366210938,
+            13.22
+          ],
+          [
+            80.41000366210938,
+            13.22
+          ],
+          [
+            80.41999816894531,
+            13.14
+          ],
+          [
+            80.63999938964844,
+            12.58
+          ],
+          [
+            80.43000030517578,
+            13.11
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "MANIFESTO",
+        "mmsi": "566692000",
+        "num_waypoints": 11,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.47,
+          13.105
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 38,
+        "status": "MATCHED",
+        "name": "TCI SURYA",
+        "mmsi": "419659000",
+        "imo": "9148245",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.56999969482422,
+            13.09
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.56999969482422,
+            13.12
+          ],
+          [
+            80.44000244140625,
+            13.14
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.94000244140625,
+            13.03
+          ],
+          [
+            80.30000305175781,
+            13.09
+          ],
+          [
+            80.33999633789062,
+            13.12
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.3499984741211,
+            13.1
+          ],
+          [
+            80.33999633789062,
+            13.09
+          ],
+          [
+            80.33999633789062,
+            13.09
+          ],
+          [
+            80.47000122070312,
+            13.11
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "TCI SURYA",
+        "mmsi": "419659000",
+        "num_waypoints": 13,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.385,
+          13.115
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 39,
+        "status": "MATCHED",
+        "name": "GENER8 HORN",
+        "mmsi": "538001255",
+        "imo": "9173757",
+        "flag": "MHL",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.78,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.55999755859375,
+            12.65
+          ],
+          [
+            80.38999938964844,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.38999938964844,
+            13.03
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.4800033569336,
+            12.84
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.44999694824219,
+            12.91
+          ],
+          [
+            80.54000091552734,
+            12.73
+          ],
+          [
+            80.41000366210938,
+            13.0
+          ],
+          [
+            80.4800033569336,
+            12.86
+          ],
+          [
+            80.38999938964844,
+            13.12
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "GENER8 HORN",
+        "mmsi": "538001255",
+        "num_waypoints": 14,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.385,
+          13.13
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 40,
+        "status": "MATCHED",
+        "name": "WARSHIP-P59",
+        "mmsi": "419098800",
+        "imo": "",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.37000274658203,
+            12.68
+          ],
+          [
+            80.41000366210938,
+            12.93
+          ],
+          [
+            80.4000015258789,
+            13.15
+          ],
+          [
+            80.38999938964844,
+            12.74
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.38999938964844,
+            13.06
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.38999938964844,
+            13.04
+          ],
+          [
+            80.38999938964844,
+            13.13
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "WARSHIP-P59",
+        "mmsi": "419098800",
+        "num_waypoints": 11,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.345,
+          13.14
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 41,
+        "status": "MATCHED",
+        "name": "ICGS ABHEEK",
+        "mmsi": "419000785",
+        "imo": "",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.37999725341797,
+            13.2
+          ],
+          [
+            80.44999694824219,
+            13.28
+          ],
+          [
+            80.58000183105469,
+            13.77
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.45999908447266,
+            13.92
+          ],
+          [
+            80.45999908447266,
+            13.29
+          ],
+          [
+            80.36000061035156,
+            13.14
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.72000122070312,
+            13.94
+          ],
+          [
+            80.6500015258789,
+            13.51
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.43000030517578,
+            13.18
+          ],
+          [
+            80.33999633789062,
+            13.14
+          ],
+          [
+            80.58999633789062,
+            13.79
+          ],
+          [
+            80.36000061035156,
+            13.18
+          ],
+          [
+            80.36000061035156,
+            13.18
+          ],
+          [
+            80.36000061035156,
+            13.16
+          ],
+          [
+            80.38999938964844,
+            13.2
+          ],
+          [
+            80.33999633789062,
+            13.13
+          ],
+          [
+            80.33999633789062,
+            13.13
+          ],
+          [
+            80.38999938964844,
+            13.24
+          ],
+          [
+            80.30999755859375,
+            13.12
+          ],
+          [
+            80.4000015258789,
+            13.18
+          ],
+          [
+            80.4000015258789,
+            13.24
+          ],
+          [
+            80.4800033569336,
+            13.94
+          ],
+          [
+            80.38999938964844,
+            13.23
+          ],
+          [
+            80.38999938964844,
+            13.22
+          ],
+          [
+            80.37000274658203,
+            13.54
+          ],
+          [
+            80.37999725341797,
+            13.23
+          ],
+          [
+            80.37999725341797,
+            13.23
+          ],
+          [
+            80.37000274658203,
+            13.14
+          ],
+          [
+            80.3499984741211,
+            13.16
+          ],
+          [
+            80.4000015258789,
+            13.19
+          ],
+          [
+            80.30999755859375,
+            13.12
+          ],
+          [
+            80.37999725341797,
+            13.19
+          ],
+          [
+            80.63999938964844,
+            13.85
+          ],
+          [
+            80.58000183105469,
+            13.67
+          ],
+          [
+            80.3499984741211,
+            13.14
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "ICGS ABHEEK",
+        "mmsi": "419000785",
+        "num_waypoints": 40,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.335,
+          13.15
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 43,
+        "status": "MATCHED",
+        "name": "VAMSEE",
+        "mmsi": "419000806",
+        "imo": "9124691",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.33999633789062,
+            13.27
+          ],
+          [
+            80.31999969482422,
+            13.13
+          ],
+          [
+            80.36000061035156,
+            13.22
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.15
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "VAMSEE",
+        "mmsi": "419000806",
+        "num_waypoints": 14,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.415,
+          13.15
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 44,
+        "status": "MATCHED",
+        "name": "MT DELIGHT",
+        "mmsi": "419000889",
+        "imo": "9038103",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.45999908447266,
+            13.17
+          ],
+          [
+            80.33999633789062,
+            13.12
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.41999816894531,
+            13.15
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "MT DELIGHT",
+        "mmsi": "419000889",
+        "num_waypoints": 5,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.44,
+          13.15
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 45,
+        "status": "MATCHED",
+        "name": "JAG PANKHI",
+        "mmsi": "419479000",
+        "imo": "9258686",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.0,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.38999938964844,
+            13.0
+          ],
+          [
+            80.80999755859375,
+            13.5
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.3499984741211,
+            13.08
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.51000213623047,
+            13.17
+          ],
+          [
+            80.52999877929688,
+            12.6
+          ],
+          [
+            80.5,
+            12.84
+          ],
+          [
+            80.37999725341797,
+            13.02
+          ],
+          [
+            80.33999633789062,
+            13.08
+          ],
+          [
+            80.44000244140625,
+            13.15
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "JAG PANKHI",
+        "mmsi": "419479000",
+        "num_waypoints": 12,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.445,
+          13.16
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 47,
+        "status": "MATCHED",
+        "name": "GAN-TRIBUTE",
+        "mmsi": "311036600",
+        "imo": "9447744",
+        "flag": "BHS",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.5999984741211,
+            12.84
+          ],
+          [
+            80.4000015258789,
+            13.26
+          ],
+          [
+            80.4000015258789,
+            13.26
+          ],
+          [
+            80.66000366210938,
+            12.6
+          ],
+          [
+            80.58000183105469,
+            12.88
+          ],
+          [
+            80.4000015258789,
+            13.27
+          ],
+          [
+            80.44999694824219,
+            13.16
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "GAN-TRIBUTE",
+        "mmsi": "311036600",
+        "num_waypoints": 7,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.36,
+          13.175
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 48,
+        "status": "MATCHED",
+        "name": "MFVSAMUDRIKA",
+        "mmsi": "419950002",
+        "imo": "",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.3499984741211,
+            13.18
+          ],
+          [
+            80.38999938964844,
+            13.21
+          ],
+          [
+            80.38999938964844,
+            13.19
+          ],
+          [
+            80.4000015258789,
+            13.23
+          ],
+          [
+            80.4000015258789,
+            13.19
+          ],
+          [
+            80.41000366210938,
+            13.2
+          ],
+          [
+            80.36000061035156,
+            13.18
+          ],
+          [
+            80.36000061035156,
+            13.18
+          ],
+          [
+            80.30000305175781,
+            13.13
+          ],
+          [
+            80.36000061035156,
+            13.19
+          ],
+          [
+            80.36000061035156,
+            13.18
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "MFVSAMUDRIKA",
+        "mmsi": "419950002",
+        "num_waypoints": 11,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.47,
+          13.175
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 49,
+        "status": "MATCHED",
+        "name": "ATAMAN",
+        "mmsi": "352980000",
+        "imo": "9179696",
+        "flag": "PAN",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.43000030517578,
+            13.22
+          ],
+          [
+            80.43000030517578,
+            13.22
+          ],
+          [
+            80.43000030517578,
+            13.22
+          ],
+          [
+            80.5999984741211,
+            13.12
+          ],
+          [
+            80.43000030517578,
+            13.22
+          ],
+          [
+            80.63999938964844,
+            13.11
+          ],
+          [
+            80.47000122070312,
+            13.18
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "ATAMAN",
+        "mmsi": "352980000",
+        "num_waypoints": 7,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.595,
+          13.175
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 50,
+        "status": "MATCHED",
+        "name": "KAPITAN AFANASYEV",
+        "mmsi": "209464000",
+        "imo": "9130133",
+        "flag": "CYP",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 3.22,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.54000091552734,
+            13.34
+          ],
+          [
+            80.41000366210938,
+            13.83
+          ],
+          [
+            80.45999908447266,
+            13.67
+          ],
+          [
+            80.63999938964844,
+            12.94
+          ],
+          [
+            80.58000183105469,
+            13.2
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "KAPITAN AFANASYEV",
+        "mmsi": "209464000",
+        "num_waypoints": 5,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.44,
+          13.185
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 51,
+        "status": "MATCHED",
+        "name": "SANMAR STANZA",
+        "mmsi": "419000204",
+        "imo": "9174488",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.44000244140625,
+            13.21
+          ],
+          [
+            80.48999786376953,
+            12.87
+          ],
+          [
+            80.44000244140625,
+            13.21
+          ],
+          [
+            80.44000244140625,
+            13.21
+          ],
+          [
+            80.5199966430664,
+            12.77
+          ],
+          [
+            80.44000244140625,
+            13.21
+          ],
+          [
+            80.44000244140625,
+            13.19
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "SANMAR STANZA",
+        "mmsi": "419000204",
+        "num_waypoints": 7,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.515,
+          13.185
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 52,
+        "status": "MATCHED",
+        "name": "VICTORY",
+        "mmsi": "419000795",
+        "imo": "8910706",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.78,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.41999816894531,
+            12.77
+          ],
+          [
+            80.4000015258789,
+            13.18
+          ],
+          [
+            80.41000366210938,
+            12.6
+          ],
+          [
+            80.43000030517578,
+            13.05
+          ],
+          [
+            80.3499984741211,
+            13.25
+          ],
+          [
+            80.86000061035156,
+            13.58
+          ],
+          [
+            80.33999633789062,
+            13.11
+          ],
+          [
+            80.41999816894531,
+            12.92
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.41000366210938,
+            13.24
+          ],
+          [
+            80.30000305175781,
+            13.1
+          ],
+          [
+            80.43000030517578,
+            13.22
+          ],
+          [
+            80.41999816894531,
+            12.88
+          ],
+          [
+            80.43000030517578,
+            13.09
+          ],
+          [
+            80.38999938964844,
+            13.2
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.3499984741211,
+            13.27
+          ],
+          [
+            80.41000366210938,
+            13.12
+          ],
+          [
+            80.38999938964844,
+            13.06
+          ],
+          [
+            80.5999984741211,
+            13.29
+          ],
+          [
+            80.30000305175781,
+            13.11
+          ],
+          [
+            80.38999938964844,
+            13.07
+          ],
+          [
+            80.4000015258789,
+            13.06
+          ],
+          [
+            80.5199966430664,
+            13.19
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "VICTORY",
+        "mmsi": "419000795",
+        "num_waypoints": 24,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.385,
+          13.195
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 53,
+        "status": "MATCHED",
+        "name": "FRONTIER ACE",
+        "mmsi": "352283000",
+        "imo": "9209271",
+        "flag": "PAN",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.78,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.33999633789062,
+            13.27
+          ],
+          [
+            80.51000213623047,
+            12.86
+          ],
+          [
+            80.44000244140625,
+            13.09
+          ],
+          [
+            80.33999633789062,
+            13.27
+          ],
+          [
+            80.54000091552734,
+            12.82
+          ],
+          [
+            80.56999969482422,
+            12.71
+          ],
+          [
+            80.4000015258789,
+            13.19
+          ],
+          [
+            80.43000030517578,
+            13.17
+          ],
+          [
+            80.33999633789062,
+            13.28
+          ],
+          [
+            80.47000122070312,
+            13.03
+          ],
+          [
+            80.33999633789062,
+            13.28
+          ],
+          [
+            80.38999938964844,
+            13.2
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "FRONTIER ACE",
+        "mmsi": "352283000",
+        "num_waypoints": 12,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.4,
+          13.195
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 54,
+        "status": "MATCHED",
+        "name": "ADRIA ACE",
+        "mmsi": "311003900",
+        "imo": "9446881",
+        "flag": "BHS",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            81.0,
+            12.9
+          ],
+          [
+            80.44000244140625,
+            13.19
+          ],
+          [
+            80.44000244140625,
+            13.17
+          ],
+          [
+            80.5,
+            12.93
+          ],
+          [
+            80.87000274658203,
+            12.97
+          ],
+          [
+            80.41999816894531,
+            13.21
+          ],
+          [
+            80.61000061035156,
+            13.11
+          ],
+          [
+            80.45999908447266,
+            13.18
+          ],
+          [
+            80.4800033569336,
+            12.99
+          ],
+          [
+            80.33999633789062,
+            13.28
+          ],
+          [
+            80.33999633789062,
+            13.28
+          ],
+          [
+            80.4000015258789,
+            13.2
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "ADRIA ACE",
+        "mmsi": "311003900",
+        "num_waypoints": 12,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.43,
+          13.195
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 55,
+        "status": "MATCHED",
+        "name": "MT DAWN DWARKA",
+        "mmsi": "419000975",
+        "imo": "9147265",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.43000030517578,
+            13.19
+          ],
+          [
+            80.5199966430664,
+            12.8
+          ],
+          [
+            80.43000030517578,
+            13.2
+          ],
+          [
+            80.43000030517578,
+            13.2
+          ],
+          [
+            80.43000030517578,
+            13.2
+          ],
+          [
+            80.5,
+            12.91
+          ],
+          [
+            80.44999694824219,
+            13.1
+          ],
+          [
+            80.43000030517578,
+            13.2
+          ],
+          [
+            80.43000030517578,
+            13.2
+          ],
+          [
+            80.43000030517578,
+            13.2
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "MT DAWN DWARKA",
+        "mmsi": "419000975",
+        "num_waypoints": 10,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.47,
+          13.195
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 56,
+        "status": "MATCHED",
+        "name": "NORD VENUS",
+        "mmsi": "355481000",
+        "imo": "9479319",
+        "flag": "PAN",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.44000244140625,
+            13.23
+          ],
+          [
+            80.44000244140625,
+            13.23
+          ],
+          [
+            80.41999816894531,
+            13.2
+          ],
+          [
+            80.44000244140625,
+            13.23
+          ],
+          [
+            80.44000244140625,
+            13.23
+          ],
+          [
+            80.87999725341797,
+            13.03
+          ],
+          [
+            80.44999694824219,
+            13.22
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.55000305175781,
+            13.17
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.47000122070312,
+            13.2
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "NORD VENUS",
+        "mmsi": "355481000",
+        "num_waypoints": 11,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.58,
+          13.195
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 57,
+        "status": "MATCHED",
+        "name": "KAPITAN AFANASYEV",
+        "mmsi": "209464000",
+        "imo": "9130133",
+        "flag": "CYP",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.54000091552734,
+            13.34
+          ],
+          [
+            80.41000366210938,
+            13.83
+          ],
+          [
+            80.45999908447266,
+            13.67
+          ],
+          [
+            80.63999938964844,
+            12.94
+          ],
+          [
+            80.58000183105469,
+            13.2
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "KAPITAN AFANASYEV",
+        "mmsi": "209464000",
+        "num_waypoints": 5,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.385,
+          13.21
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 58,
+        "status": "MATCHED",
+        "name": "BW ELM",
+        "mmsi": "235101303",
+        "imo": "9320752",
+        "flag": "GBR",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.41999816894531,
+            13.22
+          ],
+          [
+            80.3499984741211,
+            13.27
+          ],
+          [
+            80.41999816894531,
+            13.23
+          ],
+          [
+            80.41999816894531,
+            13.22
+          ],
+          [
+            80.41000366210938,
+            13.21
+          ],
+          [
+            80.41000366210938,
+            13.21
+          ],
+          [
+            80.41000366210938,
+            13.21
+          ],
+          [
+            80.41000366210938,
+            13.21
+          ],
+          [
+            80.3499984741211,
+            13.27
+          ],
+          [
+            80.41000366210938,
+            13.21
+          ],
+          [
+            80.41000366210938,
+            13.21
+          ],
+          [
+            80.38999938964844,
+            13.21
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "BW ELM",
+        "mmsi": "235101303",
+        "num_waypoints": 12,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.4,
+          13.21
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 59,
+        "status": "MATCHED",
+        "name": "KAMBAR",
+        "mmsi": "419009300",
+        "imo": "9205251",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.0,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.41000366210938,
+            13.21
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.36000061035156,
+            13.24
+          ],
+          [
+            80.3499984741211,
+            13.27
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.36000061035156,
+            13.23
+          ],
+          [
+            80.3499984741211,
+            13.27
+          ],
+          [
+            80.36000061035156,
+            13.24
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.38999938964844,
+            13.23
+          ],
+          [
+            80.38999938964844,
+            13.23
+          ],
+          [
+            80.38999938964844,
+            13.22
+          ],
+          [
+            80.33999633789062,
+            13.27
+          ],
+          [
+            80.3499984741211,
+            13.25
+          ],
+          [
+            80.3499984741211,
+            13.25
+          ],
+          [
+            80.3499984741211,
+            13.26
+          ],
+          [
+            80.38999938964844,
+            13.24
+          ],
+          [
+            80.38999938964844,
+            13.24
+          ],
+          [
+            80.3499984741211,
+            13.25
+          ],
+          [
+            80.37999725341797,
+            13.24
+          ],
+          [
+            80.33999633789062,
+            13.27
+          ],
+          [
+            80.33999633789062,
+            13.27
+          ],
+          [
+            80.33999633789062,
+            13.27
+          ],
+          [
+            80.33999633789062,
+            13.27
+          ],
+          [
+            80.3499984741211,
+            13.26
+          ],
+          [
+            80.4000015258789,
+            13.21
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "KAMBAR",
+        "mmsi": "419009300",
+        "num_waypoints": 31,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.415,
+          13.21
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 60,
+        "status": "MATCHED",
+        "name": "NIMBUS GAS",
+        "mmsi": "636017050",
+        "imo": "9034690",
+        "flag": "LBR",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.38999938964844,
+            13.23
+          ],
+          [
+            80.44999694824219,
+            13.04
+          ],
+          [
+            80.3499984741211,
+            13.25
+          ],
+          [
+            80.87999725341797,
+            13.69
+          ],
+          [
+            80.77999877929688,
+            13.59
+          ],
+          [
+            80.51000213623047,
+            12.79
+          ],
+          [
+            80.43000030517578,
+            13.12
+          ],
+          [
+            80.41999816894531,
+            13.25
+          ],
+          [
+            80.3499984741211,
+            13.27
+          ],
+          [
+            80.41999816894531,
+            13.22
+          ],
+          [
+            80.43000030517578,
+            13.21
+          ],
+          [
+            80.3499984741211,
+            13.27
+          ],
+          [
+            80.43000030517578,
+            13.29
+          ],
+          [
+            80.43000030517578,
+            13.26
+          ],
+          [
+            80.45999908447266,
+            13.31
+          ],
+          [
+            80.41999816894531,
+            13.21
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "NIMBUS GAS",
+        "mmsi": "636017050",
+        "num_waypoints": 16,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.445,
+          13.22
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 61,
+        "status": "MATCHED",
+        "name": "YOU SHEN 3",
+        "mmsi": "413376440",
+        "imo": "9596466",
+        "flag": "CHN",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.4000015258789,
+            13.23
+          ],
+          [
+            80.4000015258789,
+            13.23
+          ],
+          [
+            80.5,
+            13.21
+          ],
+          [
+            80.44999694824219,
+            13.22
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "YOU SHEN 3",
+        "mmsi": "413376440",
+        "num_waypoints": 4,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.36,
+          13.23
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 62,
+        "status": "MATCHED",
+        "name": "BW MAPLE",
+        "mmsi": "235089476",
+        "imo": "9253456",
+        "flag": "GBR",
+        "dwt": 50000,
+        "vessel_type": "TANKER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.0,
+        "anomaly_score": 30.0,
+        "anomaly_flags": [
+          "HIGH_RISK_CARGO_CATEGORY (Crude/Product Tanker)"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.345,
+          13.24
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 63,
+        "status": "MATCHED",
+        "name": "APJ MAHAKALI",
+        "mmsi": "419000842",
+        "imo": "9128817",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.44999694824219,
+            13.19
+          ],
+          [
+            80.77999877929688,
+            13.58
+          ],
+          [
+            80.83999633789062,
+            13.65
+          ],
+          [
+            80.58999633789062,
+            13.37
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.45999908447266,
+            13.23
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.44000244140625,
+            13.28
+          ],
+          [
+            80.54000091552734,
+            13.35
+          ],
+          [
+            80.44999694824219,
+            13.2
+          ],
+          [
+            80.6500015258789,
+            13.44
+          ],
+          [
+            80.94000244140625,
+            13.76
+          ],
+          [
+            80.3499984741211,
+            13.24
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "APJ MAHAKALI",
+        "mmsi": "419000842",
+        "num_waypoints": 13,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.4,
+          13.24
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 64,
+        "status": "MATCHED",
+        "name": "APJ MAHADEVA",
+        "mmsi": "419000876",
+        "imo": "9214329",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.0,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.41999816894531,
+            13.25
+          ],
+          [
+            80.86000061035156,
+            13.59
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.80000305175781,
+            13.53
+          ],
+          [
+            80.61000061035156,
+            13.39
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.43000030517578,
+            13.27
+          ],
+          [
+            80.4000015258789,
+            13.24
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "APJ MAHADEVA",
+        "mmsi": "419000876",
+        "num_waypoints": 10,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.345,
+          13.25
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 65,
+        "status": "MATCHED",
+        "name": "GLOBE DANAE",
+        "mmsi": "538003821",
+        "imo": "9483499",
+        "flag": "MHL",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.43000030517578,
+            13.24
+          ],
+          [
+            80.43000030517578,
+            13.24
+          ],
+          [
+            80.43000030517578,
+            13.24
+          ],
+          [
+            80.41999816894531,
+            13.22
+          ],
+          [
+            80.41999816894531,
+            13.19
+          ],
+          [
+            80.7300033569336,
+            12.87
+          ],
+          [
+            80.38999938964844,
+            13.21
+          ],
+          [
+            80.87999725341797,
+            12.51
+          ],
+          [
+            80.52999877929688,
+            13.07
+          ],
+          [
+            80.6500015258789,
+            12.96
+          ],
+          [
+            80.83999633789062,
+            12.69
+          ],
+          [
+            80.6500015258789,
+            12.94
+          ],
+          [
+            80.3499984741211,
+            13.25
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "GLOBE DANAE",
+        "mmsi": "538003821",
+        "num_waypoints": 15,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.36,
+          13.25
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 66,
+        "status": "MATCHED",
+        "name": "PL KORTALAIYAR",
+        "mmsi": "419007600",
+        "imo": "",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.0,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.3499984741211,
+            13.26
+          ],
+          [
+            80.37000274658203,
+            13.22
+          ],
+          [
+            80.3499984741211,
+            13.26
+          ],
+          [
+            80.3499984741211,
+            13.22
+          ],
+          [
+            80.3499984741211,
+            13.25
+          ],
+          [
+            80.3499984741211,
+            13.24
+          ],
+          [
+            80.3499984741211,
+            13.25
+          ],
+          [
+            80.37000274658203,
+            13.24
+          ],
+          [
+            80.3499984741211,
+            13.26
+          ],
+          [
+            80.37999725341797,
+            13.23
+          ],
+          [
+            80.38999938964844,
+            13.22
+          ],
+          [
+            80.38999938964844,
+            13.21
+          ],
+          [
+            80.37000274658203,
+            13.21
+          ],
+          [
+            80.37000274658203,
+            13.22
+          ],
+          [
+            80.37000274658203,
+            13.24
+          ],
+          [
+            80.37000274658203,
+            13.22
+          ],
+          [
+            80.37000274658203,
+            13.24
+          ],
+          [
+            80.3499984741211,
+            13.26
+          ],
+          [
+            80.3499984741211,
+            13.25
+          ],
+          [
+            80.36000061035156,
+            13.23
+          ],
+          [
+            80.36000061035156,
+            13.23
+          ],
+          [
+            80.36000061035156,
+            13.23
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.36000061035156,
+            13.24
+          ],
+          [
+            80.36000061035156,
+            13.24
+          ],
+          [
+            80.36000061035156,
+            13.23
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.36000061035156,
+            13.23
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.36000061035156,
+            13.24
+          ],
+          [
+            80.36000061035156,
+            13.22
+          ],
+          [
+            80.36000061035156,
+            13.24
+          ],
+          [
+            80.36000061035156,
+            13.25
+          ],
+          [
+            80.36000061035156,
+            13.23
+          ],
+          [
+            80.36000061035156,
+            13.25
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "PL KORTALAIYAR",
+        "mmsi": "419007600",
+        "num_waypoints": 37,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.375,
+          13.25
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 67,
+        "status": "MATCHED",
+        "name": "ULTRA COUGAR",
+        "mmsi": "538006338",
+        "imo": "9702778",
+        "flag": "MHL",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.66999816894531,
+            13.06
+          ],
+          [
+            80.73999786376953,
+            13.02
+          ],
+          [
+            80.3499984741211,
+            13.25
+          ],
+          [
+            80.37999725341797,
+            13.25
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "ULTRA COUGAR",
+        "mmsi": "538006338",
+        "num_waypoints": 5,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.335,
+          13.255
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 68,
+        "status": "MATCHED",
+        "name": "OCEAN LIBERTY",
+        "mmsi": "419000920",
+        "imo": "9719599",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.78,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.33999633789062,
+            13.27
+          ],
+          [
+            80.38999938964844,
+            13.24
+          ],
+          [
+            80.37999725341797,
+            13.23
+          ],
+          [
+            80.38999938964844,
+            13.23
+          ],
+          [
+            80.4000015258789,
+            13.22
+          ],
+          [
+            80.3499984741211,
+            13.25
+          ],
+          [
+            80.37000274658203,
+            13.23
+          ],
+          [
+            80.38999938964844,
+            13.21
+          ],
+          [
+            80.33999633789062,
+            13.27
+          ],
+          [
+            80.33999633789062,
+            13.27
+          ],
+          [
+            80.38999938964844,
+            13.24
+          ],
+          [
+            80.33999633789062,
+            13.27
+          ],
+          [
+            80.37000274658203,
+            13.24
+          ],
+          [
+            80.3499984741211,
+            13.25
+          ],
+          [
+            80.37000274658203,
+            13.23
+          ],
+          [
+            80.38999938964844,
+            13.22
+          ],
+          [
+            80.38999938964844,
+            13.23
+          ],
+          [
+            80.3499984741211,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.36000061035156,
+            13.24
+          ],
+          [
+            80.3499984741211,
+            13.27
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.28
+          ],
+          [
+            80.3499984741211,
+            13.27
+          ],
+          [
+            80.33999633789062,
+            13.28
+          ],
+          [
+            80.36000061035156,
+            13.23
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.3499984741211,
+            13.27
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.41000366210938,
+            13.21
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "OCEAN LIBERTY",
+        "mmsi": "419000920",
+        "num_waypoints": 34,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.37,
+          13.255
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 69,
+        "status": "MATCHED",
+        "name": "ANTIGOON",
+        "mmsi": "419001009",
+        "imo": "8717403",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.36000061035156,
+            13.25
+          ],
+          [
+            80.36000061035156,
+            13.21
+          ],
+          [
+            80.3499984741211,
+            13.24
+          ],
+          [
+            80.37000274658203,
+            13.26
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "ANTIGOON",
+        "mmsi": "419001009",
+        "num_waypoints": 4,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.335,
+          13.265
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 70,
+        "status": "MATCHED",
+        "name": "COASTAL CHALLENGER",
+        "mmsi": "244913000",
+        "imo": "9647320",
+        "flag": "NLD",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.78,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.27
+          ],
+          [
+            80.33999633789062,
+            13.27
+          ],
+          [
+            80.33999633789062,
+            13.27
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "COASTAL CHALLENGER",
+        "mmsi": "244913000",
+        "num_waypoints": 10,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.445,
+          13.265
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 71,
+        "status": "MATCHED",
+        "name": "TIANJIN HIGHWAY",
+        "mmsi": "371559000",
+        "imo": "9294355",
+        "flag": "PAN",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.78,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.44999694824219,
+            13.17
+          ],
+          [
+            80.41999816894531,
+            13.18
+          ],
+          [
+            80.55999755859375,
+            13.09
+          ],
+          [
+            80.44999694824219,
+            13.15
+          ],
+          [
+            80.45999908447266,
+            13.17
+          ],
+          [
+            80.33999633789062,
+            13.28
+          ],
+          [
+            80.33999633789062,
+            13.27
+          ],
+          [
+            80.63999938964844,
+            12.89
+          ],
+          [
+            80.4800033569336,
+            13.14
+          ],
+          [
+            80.69000244140625,
+            13.11
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.44999694824219,
+            13.27
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "TIANJIN HIGHWAY",
+        "mmsi": "371559000",
+        "num_waypoints": 12,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.41,
+          13.285
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 72,
+        "status": "MATCHED",
+        "name": "M.V.KANTI",
+        "mmsi": "419007200",
+        "imo": "",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.3499984741211,
+            13.3
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.38999938964844,
+            13.3
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.4000015258789,
+            13.29
+          ],
+          [
+            80.37999725341797,
+            13.3
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.4000015258789,
+            13.3
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.36000061035156,
+            13.31
+          ],
+          [
+            80.36000061035156,
+            13.3
+          ],
+          [
+            80.41000366210938,
+            13.29
+          ],
+          [
+            80.41000366210938,
+            13.29
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "M.V.KANTI",
+        "mmsi": "419007200",
+        "num_waypoints": 15,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.345,
+          13.3
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 73,
+        "status": "MATCHED",
+        "name": "MAT NEO",
+        "mmsi": "419001072",
+        "imo": "9649639",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.33999633789062,
+            13.31
+          ],
+          [
+            80.33999633789062,
+            13.3
+          ],
+          [
+            80.3499984741211,
+            13.3
+          ],
+          [
+            80.3499984741211,
+            13.3
+          ],
+          [
+            80.3499984741211,
+            13.3
+          ],
+          [
+            80.3499984741211,
+            13.3
+          ],
+          [
+            80.3499984741211,
+            13.3
+          ],
+          [
+            80.3499984741211,
+            13.3
+          ],
+          [
+            80.3499984741211,
+            13.3
+          ],
+          [
+            80.3499984741211,
+            13.3
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "MAT NEO",
+        "mmsi": "419001072",
+        "num_waypoints": 10,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.375,
+          13.3
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 74,
+        "status": "MATCHED",
+        "name": "KUMARI TARINI",
+        "mmsi": "419007100",
+        "imo": "",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.38999938964844,
+            13.3
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.37999725341797,
+            13.3
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.3
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.37999725341797,
+            13.3
+          ],
+          [
+            80.37999725341797,
+            13.3
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "KUMARI TARINI",
+        "mmsi": "419007100",
+        "num_waypoints": 11,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.345,
+          13.31
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 75,
+        "status": "MATCHED",
+        "name": "SMIT SERAYA",
+        "mmsi": "566804000",
+        "imo": "9662368",
+        "flag": "SGP",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "SMIT SERAYA",
+        "mmsi": "566804000",
+        "num_waypoints": 8,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.385,
+          13.31
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 76,
+        "status": "MATCHED",
+        "name": "ATLANTIC VOYAGER",
+        "mmsi": "304010897",
+        "imo": "9153410",
+        "flag": "ATG",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.61000061035156,
+            12.92
+          ],
+          [
+            80.5,
+            13.19
+          ],
+          [
+            80.58000183105469,
+            13.23
+          ],
+          [
+            80.77999877929688,
+            13.14
+          ],
+          [
+            80.6500015258789,
+            12.81
+          ],
+          [
+            80.38999938964844,
+            13.32
+          ],
+          [
+            80.38999938964844,
+            13.31
+          ],
+          [
+            80.47000122070312,
+            13.29
+          ],
+          [
+            80.38999938964844,
+            13.31
+          ],
+          [
+            80.56999969482422,
+            13.02
+          ],
+          [
+            80.38999938964844,
+            13.32
+          ],
+          [
+            80.38999938964844,
+            13.32
+          ],
+          [
+            80.38999938964844,
+            13.32
+          ],
+          [
+            80.38999938964844,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.38999938964844,
+            13.31
+          ],
+          [
+            80.38999938964844,
+            13.31
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "ATLANTIC VOYAGER",
+        "mmsi": "304010897",
+        "num_waypoints": 17,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.41,
+          13.32
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 77,
+        "status": "MATCHED",
+        "name": "BOURBON EVOLUTION807",
+        "mmsi": "228046700",
+        "imo": "9639842",
+        "flag": "FRA",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.0,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.4000015258789,
+            13.32
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.41000366210938,
+            13.32
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "BOURBON EVOLUTION807",
+        "mmsi": "228046700",
+        "num_waypoints": 6,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.415,
+          13.32
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 78,
+        "status": "MATCHED",
+        "name": "BOURBON EVOLUTION807",
+        "mmsi": "228046700",
+        "imo": "9639842",
+        "flag": "FRA",
+        "dwt": 50000,
+        "vessel_type": "OTHER",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.54,
+        "anomaly_score": 0.0,
+        "anomaly_flags": [],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.4000015258789,
+            13.32
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.3499984741211,
+            13.31
+          ],
+          [
+            80.41000366210938,
+            13.32
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "BOURBON EVOLUTION807",
+        "mmsi": "228046700",
+        "num_waypoints": 6,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.48,
+          13.365
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 79,
+        "status": "MATCHED",
+        "name": "VELA PRIME",
+        "mmsi": "357071000",
+        "imo": "9218272",
+        "flag": "PAN",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.56,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.5199966430664,
+            13.42
+          ],
+          [
+            80.41000366210938,
+            13.13
+          ],
+          [
+            80.43000030517578,
+            13.06
+          ],
+          [
+            80.4000015258789,
+            13.24
+          ],
+          [
+            80.47000122070312,
+            13.25
+          ],
+          [
+            80.5199966430664,
+            13.61
+          ],
+          [
+            80.44999694824219,
+            13.23
+          ],
+          [
+            80.56999969482422,
+            12.51
+          ],
+          [
+            80.44999694824219,
+            13.23
+          ],
+          [
+            80.41000366210938,
+            13.23
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.41000366210938,
+            13.24
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.44999694824219,
+            13.21
+          ],
+          [
+            80.47000122070312,
+            12.84
+          ],
+          [
+            80.51000213623047,
+            13.34
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.44999694824219,
+            13.23
+          ],
+          [
+            80.54000091552734,
+            13.69
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.4800033569336,
+            13.37
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "VELA PRIME",
+        "mmsi": "357071000",
+        "num_waypoints": 23,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.49,
+          13.365
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 80,
+        "status": "MATCHED",
+        "name": "VELA PRIME",
+        "mmsi": "357071000",
+        "imo": "9218272",
+        "flag": "PAN",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 1.22,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.5199966430664,
+            13.42
+          ],
+          [
+            80.41000366210938,
+            13.13
+          ],
+          [
+            80.43000030517578,
+            13.06
+          ],
+          [
+            80.4000015258789,
+            13.24
+          ],
+          [
+            80.47000122070312,
+            13.25
+          ],
+          [
+            80.5199966430664,
+            13.61
+          ],
+          [
+            80.44999694824219,
+            13.23
+          ],
+          [
+            80.56999969482422,
+            12.51
+          ],
+          [
+            80.44999694824219,
+            13.23
+          ],
+          [
+            80.41000366210938,
+            13.23
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.41000366210938,
+            13.24
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.44999694824219,
+            13.21
+          ],
+          [
+            80.47000122070312,
+            12.84
+          ],
+          [
+            80.51000213623047,
+            13.34
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.44999694824219,
+            13.23
+          ],
+          [
+            80.54000091552734,
+            13.69
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.4800033569336,
+            13.37
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "VELA PRIME",
+        "mmsi": "357071000",
+        "num_waypoints": 23,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.55,
+          13.39
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 81,
+        "status": "MATCHED",
+        "name": "MP PANAMAX 5",
+        "mmsi": "419000731",
+        "imo": "9202807",
+        "flag": "IND",
+        "dwt": 50000,
+        "vessel_type": "CARGO",
+        "speed_knots": 10.0,
+        "heading": 0.0,
+        "distance_to_sar_km": 0.0,
+        "anomaly_score": 10.0,
+        "anomaly_flags": [
+          "COMMERCIAL_CARGO_CATEGORY"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.33999633789062,
+            13.26
+          ],
+          [
+            80.41999816894531,
+            13.26
+          ],
+          [
+            80.37999725341797,
+            13.2
+          ],
+          [
+            80.4000015258789,
+            13.25
+          ],
+          [
+            80.38999938964844,
+            13.21
+          ],
+          [
+            80.4000015258789,
+            13.25
+          ],
+          [
+            80.4000015258789,
+            13.25
+          ],
+          [
+            80.55000305175781,
+            13.39
+          ]
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_track",
+        "vessel_name": "MP PANAMAX 5",
+        "mmsi": "419000731",
+        "num_waypoints": 8,
+        "line_color": "#34C759",
+        "line_width": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.5,
+          13.0
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 1,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #1)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 5.66,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.595,
+          13.085
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 30,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #30)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 6.28,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.595,
+          13.14
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 42,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #42)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 5.84,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.595,
+          13.15
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 46,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #46)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 5.05,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.595,
+          13.47
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 82,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #82)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 7.03,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.36,
+          13.495
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 83,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #83)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 19.02,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.375,
+          13.495
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 84,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #84)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 17.95,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.455,
+          13.495
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 85,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #85)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 14.16,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.48,
+          13.495
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 86,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #86)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 13.9,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.54,
+          13.495
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 87,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #87)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 11.73,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.595,
+          13.495
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 88,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #88)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 7.56,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    }
+  ]
+}

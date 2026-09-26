@@ -61,3 +61,5 @@ class Vessel(Base):
     ais_gaps = relationship("AisGap", back_populates="vessel")
     drift_runs = relationship("DriftRun", back_populates="vessel")
     cpa_events = relationship("CpaEvent", back_populates="vessel")
+    static_history = relationship("VesselStaticHistory", back_populates="vessel")
+

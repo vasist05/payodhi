@@ -15,7 +15,7 @@ import logging
 import os
 import random
 from pathlib import Path
-from typing import Callable, List, Optional, Tuple, Union
+from typing import Any, Callable, List, Optional, Tuple, Union
 
 import numpy as np
 from PIL import Image

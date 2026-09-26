@@ -1,0 +1,150 @@
+[{
+  "case_id": "chennai_2017",
+  "name": "Chennai/Ennore Collision Jan 2017",
+  "start_date": "2017-01-25",
+  "end_date": "2017-02-02",
+  "bbox": [80.0, 12.5, 81.0, 14.0],
+  "spill_lat": 13.25,
+  "spill_lon": 80.35,
+  "output_file": "chennai_2017_ais.json"
+},
+{
+  "case_id": "haldia_2018",
+  "name": "Haldia SSL Kolkata Jul 2018",
+  "start_date": "2018-07-10",
+  "end_date": "2018-07-20",
+  "bbox": [87.5, 21.0, 88.5, 22.5],
+  "spill_lat": 21.75,
+  "spill_lon": 88.05,
+  "output_file": "haldia_2018_ais.json"
+},
+{
+  "case_id": "vizag_2019_aug",
+  "name": "Vizag SPM Spill Aug 2019",
+  "start_date": "2019-08-05",
+  "end_date": "2019-08-15",
+  "bbox": [82.5, 17.0, 83.5, 18.0],
+  "spill_lat": 17.60,
+  "spill_lon": 83.30,
+  "output_file": "vizag_2019_aug_ais.json"
+},
+{
+  "case_id": "vizag_2019_oct",
+  "name": "Vizag SPM Spill Oct 2019",
+  "start_date": "2019-10-01",
+  "end_date": "2019-10-10",
+  "bbox": [82.5, 17.0, 83.5, 18.0],
+  "spill_lat": 17.60,
+  "spill_lon": 83.30,
+  "output_file": "vizag_2019_oct_ais.json"
+},
+{
+  "case_id": "kandla_2013",
+  "name": "Kandla Crude Terminal 2013",
+  "start_date": "2013-01-01",
+  "end_date": "2013-12-31",
+  "bbox": [69.5, 22.5, 70.5, 23.5],
+  "spill_lat": 22.85,
+  "spill_lon": 70.20,
+  "output_file": "kandla_2013_ais.json"
+},
+{
+  "case_id": "vadodara_2013",
+  "name": "Vadodara Rail Oil Spill Aug 2013",
+  "start_date": "2013-08-10",
+  "end_date": "2013-08-15",
+  "bbox": [73.0, 22.1, 73.4, 22.5],
+  "spill_lat": 22.30,
+  "spill_lon": 73.20,
+  "output_file": "vadodara_2013_ais.json"
+},
+{
+  "case_id": "mumbai_2018",
+  "name": "Mumbai Harbour Bunker Spill Jan 2018",
+  "start_date": "2018-01-28",
+  "end_date": "2018-02-02",
+  "bbox": [72.7, 18.8, 73.1, 19.1],
+  "spill_lat": 18.95,
+  "spill_lon": 72.85,
+  "output_file": "mumbai_2018_ais.json"
+},
+{
+  "case_id": "kamarajar_2018",
+  "name": "Kamarajar Port Fuel Line Oct 2018",
+  "start_date": "2018-10-18",
+  "end_date": "2018-10-22",
+  "bbox": [80.2, 13.0, 80.4, 13.3],
+  "spill_lat": 13.15,
+  "spill_lon": 80.30,
+  "output_file": "kamarajar_2018_ais.json"
+},
+{
+  "case_id": "paradip_2014",
+  "name": "Paradip ONGC Drill Ship Aug 2014",
+  "start_date": "2014-08-20",
+  "end_date": "2014-08-25",
+  "bbox": [86.0, 20.0, 87.0, 21.0],
+  "spill_lat": 20.25,
+  "spill_lon": 86.70,
+  "output_file": "paradip_2014_ais.json"
+},
+{
+  "case_id": "mundra_2018",
+  "name": "Mundra Port Spill 2018",
+  "start_date": "2018-06-05",
+  "end_date": "2018-06-15",
+  "bbox": [69.5, 22.6, 70.0, 23.0],
+  "spill_lat": 22.80,
+  "spill_lon": 69.70,
+  "output_file": "mundra_2018_ais.json"
+},
+{
+  "case_id": "ennore_2023",
+  "name": "Ennore CPCL Oil Spill Dec 2023",
+  "start_date": "2023-12-01",
+  "end_date": "2023-12-10",
+  "bbox": [80.2, 13.1, 80.4, 13.3],
+  "spill_lat": 13.20,
+  "spill_lon": 80.30,
+  "output_file": "ennore_2023_ais.json"
+},
+{
+  "case_id": "kochi_2025",
+  "name": "Kochi MSC ELSA 3 May 2025",
+  "start_date": "2025-05-24",
+  "end_date": "2025-05-30",
+  "bbox": [75.0, 9.5, 76.0, 10.5],
+  "spill_lat": 9.90,
+  "spill_lon": 75.50,
+  "output_file": "kochi_2025_ais.json"
+},
+{
+  "case_id": "karwar_2026",
+  "name": "Karwar Bitumen Leak Jul 2026",
+  "start_date": "2026-07-10",
+  "end_date": "2026-07-15",
+  "bbox": [74.0, 14.5, 74.5, 15.0],
+  "spill_lat": 14.80,
+  "spill_lon": 74.20,
+  "output_file": "karwar_2026_ais.json"
+},
+{
+  "case_id": "paradip_2026",
+  "name": "Paradip IOCL Pipeline May 2026",
+  "start_date": "2026-05-20",
+  "end_date": "2026-05-25",
+  "bbox": [86.5, 20.2, 87.0, 20.6],
+  "spill_lat": 20.30,
+  "spill_lon": 86.70,
+  "output_file": "paradip_2026_ais.json"
+},
+{
+  "case_id": "tn_coastal_2022",
+  "name": "Tamil Nadu Coastal Fishing 2022",
+  "start_date": "2022-01-01",
+  "end_date": "2022-12-31",
+  "bbox": [79.5, 10.0, 80.5, 12.0],
+  "spill_lat": 11.00,
+  "spill_lon": 80.00,
+  "output_file": "tn_coastal_2022_ais.json"
+}]

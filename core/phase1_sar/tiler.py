@@ -131,7 +131,7 @@ class SceneTiler:
             batch_patches = []
 
             for y0, y1, x0, x1 in batch_coords:
-                patch = padded_img[y0:y1, x0:x1]
+                patch = image_2d[y0:y1, x0:x1]
                 # In case border tile is not exactly tile_size
                 if patch.shape != (self.tile_size, self.tile_size):
                     temp = np.zeros((self.tile_size, self.tile_size), dtype=np.float32)

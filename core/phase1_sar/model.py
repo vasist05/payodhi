@@ -47,12 +47,21 @@ class SARUNetDetector(nn.Module):
                 "Install via: pip install segmentation-models-pytorch"
             )
 
-        self.model = smp.Unet(
-            encoder_name=encoder_name,
-            encoder_weights=encoder_weights,
-            in_channels=in_channels,
-            classes=classes,
-        )
+        try:
+            self.model = smp.Unet(
+                encoder_name=encoder_name,
+                encoder_weights=encoder_weights,
+                in_channels=in_channels,
+                classes=classes,
+            )
+        except Exception as exc:
+            log.warning("Could not download pretrained weights (%s), initializing without ImageNet weights: %s", encoder_weights, exc)
+            self.model = smp.Unet(
+                encoder_name=encoder_name,
+                encoder_weights=None,
+                in_channels=in_channels,
+                classes=classes,
+            )
         self.encoder_name = encoder_name
         self.in_channels = in_channels
         self.classes = classes

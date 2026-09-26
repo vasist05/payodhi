@@ -66,3 +66,10 @@ class JobStatusEnum(str, Enum):
     running = "running"
     completed = "completed"
     failed = "failed"
+
+
+class MatchStatusEnum(str, Enum):
+    matched = "matched"
+    dark_vessel = "dark_vessel"
+    borderline = "borderline"
+

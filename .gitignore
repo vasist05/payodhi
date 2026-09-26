@@ -68,5 +68,10 @@ Thumbs.db
 # Phase 8 — runtime artifacts
 backend/notification/alerts.db
 
-# Runtime output / crops
+# Runtime output / crops & simulations
 data/phase1_crops/
+data/ensemble_outputs/
+data/forward_outputs/
+data/test_ensemble_out/
+data/test_fwd_out/
+data/forcing/test_*.nc

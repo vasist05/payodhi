@@ -1,0 +1,283 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4,
+          51.0
+        ]
+      },
+      "properties": {
+        "entity_type": "spill_origin",
+        "status": "SPILL",
+        "name": "Reported Oil Spill Origin",
+        "description": "Centroid of detected oil slick from SAR analysis",
+        "marker_color": "#FF3B30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.36,
+          51.105
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 5,
+        "status": "MATCHED",
+        "name": "P&O PIONEER",
+        "mmsi": "210385000",
+        "imo": null,
+        "flag": "Unknown",
+        "dwt": 45000,
+        "vessel_type": "Tanker/Cargo",
+        "speed_knots": 16.6,
+        "heading": 130,
+        "distance_to_sar_km": 0.59,
+        "anomaly_score": 30.0,
+        "anomaly_flags": [
+          "HIGH_RISK_CARGO_CATEGORY (Crude/Product Tanker)"
+        ],
+        "marker_color": "#34C759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.15,
+          50.75
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 1,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #1)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 15.92,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.21,
+          50.75
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 2,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #2)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 15.27,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.645,
+          50.965
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 3,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #3)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 7.9,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.645,
+          50.97
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 4,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #4)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 7.91,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.54,
+          51.115
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 6,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #6)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 12.35,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.645,
+          51.225
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 7,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #7)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 19.4,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.15,
+          51.245
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 8,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #8)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 21.11,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.42,
+          51.245
+        ]
+      },
+      "properties": {
+        "entity_type": "vessel_contact",
+        "sar_id": 9,
+        "status": "DARK_VESSEL",
+        "name": "Dark Vessel (SAR #9)",
+        "mmsi": null,
+        "imo": null,
+        "flag": null,
+        "dwt": null,
+        "vessel_type": "Unidentified Radar Contact",
+        "speed_knots": null,
+        "heading": null,
+        "distance_to_sar_km": 9.41,
+        "anomaly_score": 90.0,
+        "anomaly_flags": [
+          "AIS_TRANSPONDER_INACTIVE (Unidentified radar target without AIS broadcast)"
+        ],
+        "marker_color": "#FF9500"
+      }
+    }
+  ]
+}

@@ -44,7 +44,7 @@ def score_vessel(candidate, detection_lon, detection_lat,
         "oil_type": str,
     }
     """
-    from models.drift_model.runner import run_forward
+    from core.phase3_drift.drift_model.runner import run_forward
 
     os.makedirs(outdir, exist_ok=True)
     outfile = os.path.join(outdir, f"fwd_{candidate['mmsi']}.nc")

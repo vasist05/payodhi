@@ -1,4 +1,4 @@
-from multiprocessing import Pool
+from concurrent.futures import ThreadPoolExecutor
 from functools import partial
 from .runner import run_backward
 from .aggregate import build_heatmap, confidence_contours, peak_location
@@ -9,18 +9,21 @@ def _run_one(scenario, wind, current, wave, outdir, stokes):
         return run_backward(scenario, wind, current, wave,
                             outdir=outdir, stokes=stokes)
     except Exception as e:
-        print(f"FAILED release={scenario['release_time']}: {e}")
+        print(f"FAILED release={scenario.get('release_time')}: {e}")
         return None
 
 
 def run_backward_ensemble(scenarios, wind, current, wave,
                           outdir="data/ensemble_outputs",
                           stokes="wave", n_workers=4):
-    """Run N backward simulations in parallel via multiprocessing."""
+    """Run N backward simulations in parallel via ThreadPoolExecutor (safe across Linux/Windows/macOS)."""
     fn = partial(_run_one, wind=wind, current=current, wave=wave,
                  outdir=outdir, stokes=stokes)
-    with Pool(processes=n_workers) as pool:
-        files = pool.map(fn, scenarios)
+    if n_workers <= 1 or len(scenarios) <= 1:
+        files = [fn(s) for s in scenarios]
+    else:
+        with ThreadPoolExecutor(max_workers=n_workers) as executor:
+            files = list(executor.map(fn, scenarios))
     files = [f for f in files if f is not None]
     print(f"Completed {len(files)}/{len(scenarios)} backward runs")
     return files
