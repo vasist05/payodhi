@@ -11,11 +11,17 @@ import {
   Play, Pause, RotateCcw, FastForward, Rewind, History, Upload, MapPin,
   Loader2, X, Printer, Activity, BarChart3, LayoutDashboard, Sparkles,
   Search, Filter, Eye, EyeOff, Maximize2, Minimize2, Terminal, Waves, Anchor, Info,
+  Video,
 } from 'lucide-react';
 import {
   LineChart, Line, XAxis, YAxis, Tooltip as RechartTooltip, ResponsiveContainer,
   AreaChart, Area, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar as RechartRadar,
 } from 'recharts';
+import { CoastGuardAlertPanel } from './components/CoastGuardAlertPanel';
+import { SimulationVideoStudio } from './components/SimulationVideoStudio';
+import { TacticalWindOverlay } from './components/TacticalWindOverlay';
+import { useResponses } from './hooks/useResponses';
+
 
 // ============================================================
 // TYPES
@@ -68,7 +74,16 @@ export interface IncidentCase {
   severity: 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW';
 }
 
-type TabKey = 'dashboard' | 'map' | 'attribution' | 'ai' | 'analytics' | 'reports' | 'ingest';
+export type TabKey =
+  | 'dashboard'
+  | 'map'
+  | 'simulation-video'
+  | 'attribution'
+  | 'cg-alerts'
+  | 'ai'
+  | 'analytics'
+  | 'reports'
+  | 'ingest';
 
 // ============================================================
 // DEMO MODE STATE
@@ -239,20 +254,21 @@ const DEMO_INCIDENT: IncidentCase = {
 };
 
 const INCIDENT_CASES: IncidentCase[] = [
+  DEMO_INCIDENT,
   {
     id: 'chennai-2017',
-    title: 'Chennai / Ennore Tanker Collision',
-    regionName: 'Ennore Port Anchorage / Bay of Bengal',
+    title: 'Chennai / Ennore Tanker Collision (2017)',
+    regionName: 'Ennore Outer Fairway · Bay of Bengal (10nm Offshore)',
     incidentDate: '2017-01-28',
     detectionTimestamp: '2017-01-28T12:00:00Z',
     estimatedReleaseWindow: {
       start: '2017-01-28T04:00:00Z', end: '2017-01-28T05:30:00Z',
       hoursBeforeDetection: 7.5,
     },
-    centerLat: 13.255, centerLon: 80.365, zoomLevel: 11,
+    centerLat: 13.325, centerLon: 80.435, zoomLevel: 12,
     slickPolygon: [
-      [13.285, 80.355], [13.270, 80.375], [13.240, 80.380],
-      [13.220, 80.360], [13.235, 80.345], [13.265, 80.340],
+      [13.350, 80.420], [13.335, 80.445], [13.305, 80.450],
+      [13.285, 80.435], [13.300, 80.415], [13.330, 80.410],
     ],
     slickAreaKm2: 34.2, slickPerimeterKm: 28.6,
     estimatedVolumeBarrels: 1850, estimatedAgeHours: 7.8,
@@ -262,22 +278,22 @@ const INCIDENT_CASES: IncidentCase[] = [
     oceanCurrentSpeedKnots: 1.1, oceanCurrentDirDeg: 195,
     seaSurfaceTempC: 27.2, waveHeightM: 1.5,
     backwardDriftPath: [
-      { hoursFromDetection: 0, lat: 13.255, lon: 80.365, timestamp: '2017-01-28T12:00:00Z', uncertaintyRadiusKm: 0.8 },
-      { hoursFromDetection: -2.0, lat: 13.275, lon: 80.360, timestamp: '2017-01-28T10:00:00Z', uncertaintyRadiusKm: 1.5 },
-      { hoursFromDetection: -4.0, lat: 13.295, lon: 80.354, timestamp: '2017-01-28T08:00:00Z', uncertaintyRadiusKm: 2.2 },
-      { hoursFromDetection: -6.0, lat: 13.315, lon: 80.348, timestamp: '2017-01-28T06:00:00Z', uncertaintyRadiusKm: 2.9 },
-      { hoursFromDetection: -7.5, lat: 13.330, lon: 80.342, timestamp: '2017-01-28T04:30:00Z', uncertaintyRadiusKm: 3.5 },
+      { hoursFromDetection: 0, lat: 13.290, lon: 80.425, timestamp: '2017-01-28T12:00:00Z', uncertaintyRadiusKm: 0.8 },
+      { hoursFromDetection: -2.0, lat: 13.305, lon: 80.420, timestamp: '2017-01-28T10:00:00Z', uncertaintyRadiusKm: 1.5 },
+      { hoursFromDetection: -4.0, lat: 13.320, lon: 80.416, timestamp: '2017-01-28T08:00:00Z', uncertaintyRadiusKm: 2.2 },
+      { hoursFromDetection: -6.0, lat: 13.335, lon: 80.412, timestamp: '2017-01-28T06:00:00Z', uncertaintyRadiusKm: 2.9 },
+      { hoursFromDetection: -7.5, lat: 13.345, lon: 80.410, timestamp: '2017-01-28T04:30:00Z', uncertaintyRadiusKm: 3.5 },
     ],
     forwardDriftForecast: [
-      { hoursFromDetection: 0, lat: 13.255, lon: 80.365, timestamp: '2017-01-28T12:00:00Z', uncertaintyRadiusKm: 0.8 },
-      { hoursFromDetection: 6.0, lat: 13.210, lon: 80.370, timestamp: '2017-01-28T18:00:00Z', uncertaintyRadiusKm: 2.8 },
-      { hoursFromDetection: 12.0, lat: 13.160, lon: 80.375, timestamp: '2017-01-29T00:00:00Z', uncertaintyRadiusKm: 4.9 },
-      { hoursFromDetection: 24.0, lat: 13.060, lon: 80.340, timestamp: '2017-01-29T12:00:00Z', uncertaintyRadiusKm: 8.5 },
+      { hoursFromDetection: 0, lat: 13.290, lon: 80.425, timestamp: '2017-01-28T12:00:00Z', uncertaintyRadiusKm: 0.8 },
+      { hoursFromDetection: 6.0, lat: 13.260, lon: 80.430, timestamp: '2017-01-28T18:00:00Z', uncertaintyRadiusKm: 2.8 },
+      { hoursFromDetection: 12.0, lat: 13.220, lon: 80.435, timestamp: '2017-01-29T00:00:00Z', uncertaintyRadiusKm: 4.9 },
+      { hoursFromDetection: 24.0, lat: 13.150, lon: 80.440, timestamp: '2017-01-29T12:00:00Z', uncertaintyRadiusKm: 8.5 },
     ],
     originHeatmap: [
-      { lat: 13.330, lon: 80.342, probability: 0.98, radiusMeters: 1600 },
-      { lat: 13.322, lon: 80.346, probability: 0.82, radiusMeters: 2500 },
-      { lat: 13.340, lon: 80.338, probability: 0.68, radiusMeters: 3200 },
+      { lat: 13.345, lon: 80.410, probability: 0.98, radiusMeters: 1600 },
+      { lat: 13.338, lon: 80.415, probability: 0.82, radiusMeters: 2400 },
+      { lat: 13.352, lon: 80.408, probability: 0.68, radiusMeters: 3100 },
     ],
     suspects: [
       {
@@ -296,11 +312,11 @@ const INCIDENT_CASES: IncidentCase[] = [
         ],
         disqualificationReasons: [],
         track: [
-          { lat: 13.350, lon: 80.360, timestamp: '2017-01-28T03:30:00Z', sogKnots: 11.2, cogDegrees: 210 },
-          { lat: 13.331, lon: 80.343, timestamp: '2017-01-28T04:30:00Z', sogKnots: 2.1, cogDegrees: 140 },
-          { lat: 13.328, lon: 80.344, timestamp: '2017-01-28T06:00:00Z', sogKnots: 0.4, cogDegrees: 190 },
-          { lat: 13.325, lon: 80.345, timestamp: '2017-01-28T09:00:00Z', sogKnots: 0.2, cogDegrees: 180 },
-          { lat: 13.322, lon: 80.347, timestamp: '2017-01-28T12:00:00Z', sogKnots: 0.1, cogDegrees: 180 },
+          { lat: 13.385, lon: 80.445, timestamp: '2017-01-28T03:30:00Z', sogKnots: 11.2, cogDegrees: 210 },
+          { lat: 13.356, lon: 80.421, timestamp: '2017-01-28T04:30:00Z', sogKnots: 2.1, cogDegrees: 140 },
+          { lat: 13.350, lon: 80.423, timestamp: '2017-01-28T06:00:00Z', sogKnots: 0.4, cogDegrees: 190 },
+          { lat: 13.345, lon: 80.425, timestamp: '2017-01-28T09:00:00Z', sogKnots: 0.2, cogDegrees: 180 },
+          { lat: 13.340, lon: 80.427, timestamp: '2017-01-28T12:00:00Z', sogKnots: 0.1, cogDegrees: 180 },
         ],
       },
       {
@@ -317,10 +333,10 @@ const INCIDENT_CASES: IncidentCase[] = [
           'Hull penetration restricted to forward ballast tank',
         ],
         track: [
-          { lat: 13.310, lon: 80.330, timestamp: '2017-01-28T03:30:00Z', sogKnots: 9.8, cogDegrees: 35 },
-          { lat: 13.329, lon: 80.341, timestamp: '2017-01-28T04:30:00Z', sogKnots: 1.5, cogDegrees: 80 },
-          { lat: 13.330, lon: 80.355, timestamp: '2017-01-28T06:00:00Z', sogKnots: 0.3, cogDegrees: 90 },
-          { lat: 13.332, lon: 80.360, timestamp: '2017-01-28T12:00:00Z', sogKnots: 0.1, cogDegrees: 90 },
+          { lat: 13.325, lon: 80.405, timestamp: '2017-01-28T03:30:00Z', sogKnots: 9.8, cogDegrees: 35 },
+          { lat: 13.354, lon: 80.420, timestamp: '2017-01-28T04:30:00Z', sogKnots: 1.5, cogDegrees: 80 },
+          { lat: 13.358, lon: 80.435, timestamp: '2017-01-28T06:00:00Z', sogKnots: 0.3, cogDegrees: 90 },
+          { lat: 13.360, lon: 80.440, timestamp: '2017-01-28T12:00:00Z', sogKnots: 0.1, cogDegrees: 90 },
         ],
       },
       {
@@ -338,8 +354,8 @@ const INCIDENT_CASES: IncidentCase[] = [
         ],
         disqualificationReasons: ['No historical trajectory (no transponder)'],
         track: [
-          { lat: 13.288, lon: 80.305, timestamp: '2017-01-28T03:30:00Z', sogKnots: 2.1, cogDegrees: 180 },
-          { lat: 13.292, lon: 80.308, timestamp: '2017-01-28T12:00:00Z', sogKnots: 1.8, cogDegrees: 175 },
+          { lat: 13.370, lon: 80.475, timestamp: '2017-01-28T03:30:00Z', sogKnots: 1.8, cogDegrees: 180 },
+          { lat: 13.355, lon: 80.478, timestamp: '2017-01-28T12:00:00Z', sogKnots: 1.5, cogDegrees: 175 },
         ],
       },
     ],
@@ -349,7 +365,7 @@ const INCIDENT_CASES: IncidentCase[] = [
   {
     id: 'mumbai-2023',
     title: 'Mumbai High Offshore Incident',
-    regionName: 'Offshore Arabian Sea (EEZ Zone)',
+    regionName: 'Offshore Arabian Sea (EEZ Zone · 160km West)',
     incidentDate: '2023-11-05',
     detectionTimestamp: '2023-11-05T08:15:00Z',
     estimatedReleaseWindow: {
@@ -408,6 +424,259 @@ const INCIDENT_CASES: IncidentCase[] = [
       },
     ],
     summaryNotes: 'Offshore illegal discharge candidate identified with 84/100 evidentiary support.',
+    severity: 'HIGH',
+  },
+  {
+    id: 'haldia-2018',
+    title: 'Haldia / Sandheads SSL Kolkata Spill',
+    regionName: 'Sandheads Fairway · Bay of Bengal (35nm Offshore)',
+    incidentDate: '2018-07-14',
+    detectionTimestamp: '2018-07-14T09:30:00Z',
+    estimatedReleaseWindow: {
+      start: '2018-07-14T02:00:00Z', end: '2018-07-14T04:30:00Z',
+      hoursBeforeDetection: 6.0,
+    },
+    centerLat: 21.480, centerLon: 88.240, zoomLevel: 11,
+    slickPolygon: [
+      [21.510, 88.220], [21.495, 88.265], [21.460, 88.270],
+      [21.445, 88.230], [21.470, 88.200],
+    ],
+    slickAreaKm2: 28.5, slickPerimeterKm: 24.2,
+    estimatedVolumeBarrels: 890, estimatedAgeHours: 6.5,
+    fpFilterConfidence: 0.932, isVerifiedOil: true,
+    lookalikeCategoryChecked: 'Monsoon Estuary Sediment Plume',
+    windU10: -4.2, windV10: 2.8, windSpeedKnots: 12.4, windDirectionDeg: 120,
+    oceanCurrentSpeedKnots: 1.4, oceanCurrentDirDeg: 25,
+    seaSurfaceTempC: 28.6, waveHeightM: 1.8,
+    backwardDriftPath: [
+      { hoursFromDetection: 0, lat: 21.480, lon: 88.240, timestamp: '2018-07-14T09:30:00Z', uncertaintyRadiusKm: 0.8 },
+      { hoursFromDetection: -2.0, lat: 21.455, lon: 88.232, timestamp: '2018-07-14T07:30:00Z', uncertaintyRadiusKm: 1.6 },
+      { hoursFromDetection: -4.0, lat: 21.430, lon: 88.224, timestamp: '2018-07-14T05:30:00Z', uncertaintyRadiusKm: 2.4 },
+      { hoursFromDetection: -6.0, lat: 21.405, lon: 88.216, timestamp: '2018-07-14T03:30:00Z', uncertaintyRadiusKm: 3.2 },
+    ],
+    forwardDriftForecast: [
+      { hoursFromDetection: 0, lat: 21.480, lon: 88.240, timestamp: '2018-07-14T09:30:00Z', uncertaintyRadiusKm: 0.8 },
+      { hoursFromDetection: 6.0, lat: 21.530, lon: 88.255, timestamp: '2018-07-14T15:30:00Z', uncertaintyRadiusKm: 2.7 },
+      { hoursFromDetection: 12.0, lat: 21.580, lon: 88.270, timestamp: '2018-07-14T21:30:00Z', uncertaintyRadiusKm: 5.2 },
+      { hoursFromDetection: 24.0, lat: 21.680, lon: 88.300, timestamp: '2018-07-15T09:30:00Z', uncertaintyRadiusKm: 8.9 },
+    ],
+    originHeatmap: [
+      { lat: 21.405, lon: 88.216, probability: 0.94, radiusMeters: 1500 },
+      { lat: 21.415, lon: 88.225, probability: 0.76, radiusMeters: 2300 },
+    ],
+    suspects: [
+      {
+        id: 'vessel-haldia-1', mmsi: '419001150', name: 'SSL Kolkata',
+        type: 'Container Ship', flag: 'India (IN)',
+        lengthMeters: 148, grossTonnage: 9956, lastCargo: 'Container Cargo & Heavy IFO-380',
+        isDarkVessel: false, attributionScore: 91, evidenceGrade: 'STRONG',
+        driftAgreement: 94, timeOverlap: 92, spatialProximity: 89,
+        vesselCharacteristics: 86, behavioralAnomaly: 93,
+        distanceToOriginKm: 0.6, timeDiffMinutes: 12,
+        keyEvidence: [
+          'Vessel reported onboard casualty and abandoned ship at 03:45 UTC',
+          'Heavy bunker fuel slick detected along drift axis towards Sandheads',
+          'Hydrodynamic hindcast correlates 94% with vessel drift trajectory',
+        ],
+        disqualificationReasons: [],
+        track: [
+          { lat: 21.380, lon: 88.205, timestamp: '2018-07-14T01:30:00Z', sogKnots: 8.5, cogDegrees: 30 },
+          { lat: 21.408, lon: 88.218, timestamp: '2018-07-14T03:30:00Z', sogKnots: 1.2, cogDegrees: 25 },
+          { lat: 21.445, lon: 88.230, timestamp: '2018-07-14T06:00:00Z', sogKnots: 0.8, cogDegrees: 20 },
+          { lat: 21.480, lon: 88.242, timestamp: '2018-07-14T09:30:00Z', sogKnots: 0.3, cogDegrees: 15 },
+        ],
+      },
+    ],
+    summaryNotes: 'Maritime accident verified with high-confidence oil slick drift attribution.',
+    severity: 'HIGH',
+  },
+  {
+    id: 'kochi-2025',
+    title: 'Kochi Outer Roadstead Incident',
+    regionName: 'International Tanker Highway · Arabian Sea (35km Offshore)',
+    incidentDate: '2025-05-26',
+    detectionTimestamp: '2025-05-26T11:00:00Z',
+    estimatedReleaseWindow: {
+      start: '2025-05-26T05:00:00Z', end: '2025-05-26T07:15:00Z',
+      hoursBeforeDetection: 5.0,
+    },
+    centerLat: 9.920, centerLon: 75.820, zoomLevel: 11,
+    slickPolygon: [
+      [9.950, 75.800], [9.940, 75.845], [9.910, 75.850],
+      [9.890, 75.810], [9.920, 75.790],
+    ],
+    slickAreaKm2: 21.4, slickPerimeterKm: 19.8,
+    estimatedVolumeBarrels: 540, estimatedAgeHours: 5.2,
+    fpFilterConfidence: 0.926, isVerifiedOil: true,
+    lookalikeCategoryChecked: 'Biogenic Ocean Film Rejection',
+    windU10: 3.1, windV10: 4.8, windSpeedKnots: 11.2, windDirectionDeg: 215,
+    oceanCurrentSpeedKnots: 1.2, oceanCurrentDirDeg: 345,
+    seaSurfaceTempC: 29.4, waveHeightM: 1.3,
+    backwardDriftPath: [
+      { hoursFromDetection: 0, lat: 9.920, lon: 75.820, timestamp: '2025-05-26T11:00:00Z', uncertaintyRadiusKm: 0.7 },
+      { hoursFromDetection: -2.0, lat: 9.895, lon: 75.835, timestamp: '2025-05-26T09:00:00Z', uncertaintyRadiusKm: 1.5 },
+      { hoursFromDetection: -5.0, lat: 9.855, lon: 75.860, timestamp: '2025-05-26T06:00:00Z', uncertaintyRadiusKm: 2.8 },
+    ],
+    forwardDriftForecast: [
+      { hoursFromDetection: 0, lat: 9.920, lon: 75.820, timestamp: '2025-05-26T11:00:00Z', uncertaintyRadiusKm: 0.7 },
+      { hoursFromDetection: 6.0, lat: 9.965, lon: 75.800, timestamp: '2025-05-26T17:00:00Z', uncertaintyRadiusKm: 2.5 },
+      { hoursFromDetection: 12.0, lat: 10.015, lon: 75.775, timestamp: '2025-05-26T23:00:00Z', uncertaintyRadiusKm: 4.8 },
+      { hoursFromDetection: 24.0, lat: 10.110, lon: 75.725, timestamp: '2025-05-27T11:00:00Z', uncertaintyRadiusKm: 8.6 },
+    ],
+    originHeatmap: [
+      { lat: 9.855, lon: 75.860, probability: 0.93, radiusMeters: 1700 },
+      { lat: 9.865, lon: 75.850, probability: 0.78, radiusMeters: 2500 },
+    ],
+    suspects: [
+      {
+        id: 'vessel-kochi-1', mmsi: '538006240', name: 'MT Ocean Voyager',
+        type: 'Crude Oil Tanker', flag: 'Marshall Islands (MH)',
+        lengthMeters: 250, grossTonnage: 58000, lastCargo: 'Basrah Heavy Crude',
+        isDarkVessel: false, attributionScore: 87, evidenceGrade: 'STRONG',
+        driftAgreement: 91, timeOverlap: 89, spatialProximity: 85,
+        vesselCharacteristics: 93, behavioralAnomaly: 77,
+        distanceToOriginKm: 1.2, timeDiffMinutes: 18,
+        keyEvidence: [
+          'Transited within 1.2 km of hindcast centroid along international tanker fairway',
+          'De-ballasting signature confirmed by satellite infrared differential',
+          'Discharge velocity matches hydrodynamic trajectory displacement',
+        ],
+        disqualificationReasons: [],
+        track: [
+          { lat: 9.800, lon: 75.900, timestamp: '2025-05-26T04:30:00Z', sogKnots: 13.4, cogDegrees: 325 },
+          { lat: 9.858, lon: 75.858, timestamp: '2025-05-26T06:15:00Z', sogKnots: 10.8, cogDegrees: 322 },
+          { lat: 9.925, lon: 75.815, timestamp: '2025-05-26T08:30:00Z', sogKnots: 13.6, cogDegrees: 320 },
+          { lat: 9.995, lon: 75.765, timestamp: '2025-05-26T11:00:00Z', sogKnots: 13.8, cogDegrees: 320 },
+        ],
+      },
+    ],
+    summaryNotes: 'High-traffic international corridor attribution with verified tanker origin.',
+    severity: 'HIGH',
+  },
+  {
+    id: 'vizag-2019',
+    title: 'Visakhapatnam SPM Crude Discharge',
+    regionName: 'Vizag Outer Roadstead · Bay of Bengal (15km Offshore)',
+    incidentDate: '2019-08-11',
+    detectionTimestamp: '2019-08-11T07:45:00Z',
+    estimatedReleaseWindow: {
+      start: '2019-08-11T02:30:00Z', end: '2019-08-11T04:15:00Z',
+      hoursBeforeDetection: 4.5,
+    },
+    centerLat: 17.640, centerLon: 83.460, zoomLevel: 11,
+    slickPolygon: [
+      [17.670, 83.440], [17.655, 83.485], [17.620, 83.490],
+      [17.610, 83.450], [17.635, 83.430],
+    ],
+    slickAreaKm2: 18.2, slickPerimeterKm: 17.5,
+    estimatedVolumeBarrels: 480, estimatedAgeHours: 4.6,
+    fpFilterConfidence: 0.954, isVerifiedOil: true,
+    lookalikeCategoryChecked: 'Coastal Wave Shadow Filter',
+    windU10: -3.8, windV10: -2.4, windSpeedKnots: 9.8, windDirectionDeg: 55,
+    oceanCurrentSpeedKnots: 0.9, oceanCurrentDirDeg: 210,
+    seaSurfaceTempC: 28.8, waveHeightM: 1.1,
+    backwardDriftPath: [
+      { hoursFromDetection: 0, lat: 17.640, lon: 83.460, timestamp: '2019-08-11T07:45:00Z', uncertaintyRadiusKm: 0.6 },
+      { hoursFromDetection: -2.0, lat: 17.660, lon: 83.450, timestamp: '2019-08-11T05:45:00Z', uncertaintyRadiusKm: 1.4 },
+      { hoursFromDetection: -4.5, lat: 17.685, lon: 83.438, timestamp: '2019-08-11T03:15:00Z', uncertaintyRadiusKm: 2.6 },
+    ],
+    forwardDriftForecast: [
+      { hoursFromDetection: 0, lat: 17.640, lon: 83.460, timestamp: '2019-08-11T07:45:00Z', uncertaintyRadiusKm: 0.6 },
+      { hoursFromDetection: 6.0, lat: 17.605, lon: 83.475, timestamp: '2019-08-11T13:45:00Z', uncertaintyRadiusKm: 2.4 },
+      { hoursFromDetection: 12.0, lat: 17.565, lon: 83.490, timestamp: '2019-08-11T19:45:00Z', uncertaintyRadiusKm: 4.6 },
+      { hoursFromDetection: 24.0, lat: 17.480, lon: 83.520, timestamp: '2019-08-12T07:45:00Z', uncertaintyRadiusKm: 8.2 },
+    ],
+    originHeatmap: [
+      { lat: 17.685, lon: 83.438, probability: 0.95, radiusMeters: 1400 },
+      { lat: 17.675, lon: 83.445, probability: 0.81, radiusMeters: 2200 },
+    ],
+    suspects: [
+      {
+        id: 'vessel-vizag-1', mmsi: '419082000', name: 'MT Ratna Puja',
+        type: 'Crude Oil Tanker', flag: 'India (IN)',
+        lengthMeters: 220, grossTonnage: 44000, lastCargo: 'Domestic Offshore Crude',
+        isDarkVessel: false, attributionScore: 89, evidenceGrade: 'STRONG',
+        driftAgreement: 93, timeOverlap: 91, spatialProximity: 88,
+        vesselCharacteristics: 90, behavioralAnomaly: 82,
+        distanceToOriginKm: 0.9, timeDiffMinutes: 14,
+        keyEvidence: [
+          'SPM crude transfer line disconnection observed at 03:20 UTC',
+          'Vessel draft shift of 0.4m consistent with pipeline backflow',
+          'Centroid coordinates align 93% with backward Eulerian drift model',
+        ],
+        disqualificationReasons: [],
+        track: [
+          { lat: 17.580, lon: 83.495, timestamp: '2019-08-11T01:30:00Z', sogKnots: 10.4, cogDegrees: 330 },
+          { lat: 17.688, lon: 83.436, timestamp: '2019-08-11T03:20:00Z', sogKnots: 0.5, cogDegrees: 180 },
+          { lat: 17.675, lon: 83.442, timestamp: '2019-08-11T05:30:00Z', sogKnots: 1.1, cogDegrees: 160 },
+          { lat: 17.635, lon: 83.465, timestamp: '2019-08-11T07:45:00Z', sogKnots: 8.2, cogDegrees: 145 },
+        ],
+      },
+    ],
+    summaryNotes: 'SPM crude discharge incident confirmed with high-confidence AIS and drift correlation.',
+    severity: 'MEDIUM',
+  },
+  {
+    id: 'paradip-2026',
+    title: 'Paradip Port Offshore Pipeline Leak',
+    regionName: 'Paradip Offshore Deepwater Basin · Bay of Bengal',
+    incidentDate: '2026-05-22',
+    detectionTimestamp: '2026-05-22T06:30:00Z',
+    estimatedReleaseWindow: {
+      start: '2026-05-22T01:00:00Z', end: '2026-05-22T03:00:00Z',
+      hoursBeforeDetection: 4.5,
+    },
+    centerLat: 20.220, centerLon: 86.890, zoomLevel: 11,
+    slickPolygon: [
+      [20.250, 86.870], [20.235, 86.915], [20.200, 86.920],
+      [20.190, 86.880], [20.215, 86.860],
+    ],
+    slickAreaKm2: 22.8, slickPerimeterKm: 21.0,
+    estimatedVolumeBarrels: 710, estimatedAgeHours: 4.8,
+    fpFilterConfidence: 0.948, isVerifiedOil: true,
+    lookalikeCategoryChecked: 'Estuarine Organic Film Rejection',
+    windU10: -4.5, windV10: -1.8, windSpeedKnots: 10.4, windDirectionDeg: 68,
+    oceanCurrentSpeedKnots: 1.0, oceanCurrentDirDeg: 215,
+    seaSurfaceTempC: 29.0, waveHeightM: 1.2,
+    backwardDriftPath: [
+      { hoursFromDetection: 0, lat: 20.220, lon: 86.890, timestamp: '2026-05-22T06:30:00Z', uncertaintyRadiusKm: 0.7 },
+      { hoursFromDetection: -2.0, lat: 20.245, lon: 86.878, timestamp: '2026-05-22T04:30:00Z', uncertaintyRadiusKm: 1.5 },
+      { hoursFromDetection: -4.5, lat: 20.275, lon: 86.862, timestamp: '2026-05-22T02:00:00Z', uncertaintyRadiusKm: 2.8 },
+    ],
+    forwardDriftForecast: [
+      { hoursFromDetection: 0, lat: 20.220, lon: 86.890, timestamp: '2026-05-22T06:30:00Z', uncertaintyRadiusKm: 0.7 },
+      { hoursFromDetection: 6.0, lat: 20.180, lon: 86.910, timestamp: '2026-05-22T12:30:00Z', uncertaintyRadiusKm: 2.6 },
+      { hoursFromDetection: 12.0, lat: 20.135, lon: 86.930, timestamp: '2026-05-22T18:30:00Z', uncertaintyRadiusKm: 4.9 },
+      { hoursFromDetection: 24.0, lat: 20.040, lon: 86.970, timestamp: '2026-05-23T06:30:00Z', uncertaintyRadiusKm: 8.8 },
+    ],
+    originHeatmap: [
+      { lat: 20.275, lon: 86.862, probability: 0.96, radiusMeters: 1600 },
+      { lat: 20.265, lon: 86.872, probability: 0.79, radiusMeters: 2400 },
+    ],
+    suspects: [
+      {
+        id: 'vessel-paradip-1', mmsi: '419075000', name: 'MT Jag Aparna',
+        type: 'Crude Oil Tanker', flag: 'India (IN)',
+        lengthMeters: 232, grossTonnage: 47500, lastCargo: 'Import Crude',
+        isDarkVessel: false, attributionScore: 88, evidenceGrade: 'STRONG',
+        driftAgreement: 92, timeOverlap: 90, spatialProximity: 86,
+        vesselCharacteristics: 91, behavioralAnomaly: 80,
+        distanceToOriginKm: 1.1, timeDiffMinutes: 16,
+        keyEvidence: [
+          'Offshore pipeline manifold transit during pressure loss spike',
+          'Vessel course alteration of 35° coincident with release window',
+          'Hindcast drift trajectory intersects historical track within 1.1 km',
+        ],
+        disqualificationReasons: [],
+        track: [
+          { lat: 20.140, lon: 86.950, timestamp: '2026-05-22T00:30:00Z', sogKnots: 12.8, cogDegrees: 325 },
+          { lat: 20.278, lon: 86.860, timestamp: '2026-05-22T02:00:00Z', sogKnots: 2.4, cogDegrees: 290 },
+          { lat: 20.260, lon: 86.872, timestamp: '2026-05-22T04:00:00Z', sogKnots: 1.2, cogDegrees: 170 },
+          { lat: 20.215, lon: 86.892, timestamp: '2026-05-22T06:30:00Z', sogKnots: 9.6, cogDegrees: 155 },
+        ],
+      },
+    ],
+    summaryNotes: 'Deepwater crude discharge attribution with verifiable satellite radar telemetry.',
     severity: 'HIGH',
   },
 ];
@@ -850,6 +1119,7 @@ const LayerControls: React.FC<LayerControlsProps> = ({ activeLayers, toggleLayer
     { key: 'forwardForecast', label: 'Forecast 24h', color: 'bg-cyan-400', active: activeLayers.forwardForecast },
     { key: 'aisTracks', label: 'AIS Tracks', color: 'bg-blue-500', active: activeLayers.aisTracks },
     { key: 'darkVessels', label: 'Dark Vessels', color: 'bg-amber-500', active: activeLayers.darkVessels },
+    { key: 'windVectors', label: 'Wind Streamlines', color: 'bg-teal-400', active: activeLayers.windVectors !== false },
     { key: 'pipelines', label: 'Pipelines', color: 'bg-yellow-400', active: showPipelines },
   ];
 
@@ -1030,6 +1300,9 @@ const HeroMap: React.FC<HeroMapProps> = ({
     <MapContainer center={center} zoom={incident.zoomLevel} scrollWheelZoom className="w-full h-full">
       <MapViewUpdater center={center} zoom={incident.zoomLevel} />
 
+      {/* ── TACTICAL WIND & OCEAN CURRENT VECTOR STREAMLINES ── */}
+      <TacticalWindOverlay incident={incident} visible={activeLayers.windVectors !== false} />
+
       {basemap === 'dark' && (
         <>
           <TileLayer url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}" maxZoom={16} />
@@ -1190,13 +1463,25 @@ const HeroMap: React.FC<HeroMapProps> = ({
         );
       })}
 
-      {/* ── PIPELINES ── */}
+      {/* ── SUBSEA PIPELINES (strictly offshore) ── */}
       {showPipelines && (
         <>
-          <Polyline positions={[[13.0827, 80.2707], [13.5, 80.45], [14.2, 80.5], [15.0, 80.6]]}
-            pathOptions={{ color: '#facc15', weight: 2.5, dashArray: '8, 6', opacity: 0.7 }} />
-          <Polyline positions={[[13.35, 80.35], [13.5, 80.25], [13.7, 80.15]]}
-            pathOptions={{ color: '#facc15', weight: 2, dashArray: '6, 6', opacity: 0.55 }} />
+          <Polyline
+            positions={
+              incident.centerLon < 75
+                ? [
+                    [19.20, 71.35],
+                    [19.35, 71.45],
+                    [19.50, 71.55],
+                  ]
+                : [
+                    [incident.centerLat - 0.15, incident.centerLon + 0.05],
+                    [incident.centerLat, incident.centerLon + 0.08],
+                    [incident.centerLat + 0.18, incident.centerLon + 0.12],
+                  ]
+            }
+            pathOptions={{ color: '#facc15', weight: 2.2, dashArray: '8, 6', opacity: 0.65 }}
+          />
         </>
       )}
 
@@ -2163,17 +2448,41 @@ const MetaBox: React.FC<{ label: string; value: string }> = ({ label, value }) =
 
 interface NavbarProps {
   selectedIncident: IncidentCase;
+  allIncidents: IncidentCase[];
+  onSelectIncident: (inc: IncidentCase) => void;
   isLiveBackend: boolean;
+  wsConnected?: boolean;
+  backendReachable?: boolean;
+  pendingAlertCount?: number;
   onOpenAI: () => void;
   onOpenAnalytics: () => void;
   onOpenReports: () => void;
   onOpenIngest: () => void;
+  onOpenSimulationVideo: () => void;
+  onOpenCoastGuard: () => void;
   isDemoActive: boolean;
   onStartDemo: () => void;
   onStopDemo: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ selectedIncident, isLiveBackend, onOpenAI, onOpenAnalytics, onOpenReports, onOpenIngest, isDemoActive, onStartDemo, onStopDemo }) => (
+const Navbar: React.FC<NavbarProps> = ({
+  selectedIncident,
+  allIncidents,
+  onSelectIncident,
+  isLiveBackend,
+  wsConnected = false,
+  backendReachable = false,
+  pendingAlertCount = 0,
+  onOpenAI,
+  onOpenAnalytics,
+  onOpenReports,
+  onOpenIngest,
+  onOpenSimulationVideo,
+  onOpenCoastGuard,
+  isDemoActive,
+  onStartDemo,
+  onStopDemo,
+}) => (
   <header className="h-14 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 px-4 flex items-center justify-between z-40 select-none flex-shrink-0 no-print">
     <div className="flex items-center space-x-3">
       <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center shadow-lg shadow-cyan-500/20 border border-cyan-400/40">
@@ -2183,7 +2492,8 @@ const Navbar: React.FC<NavbarProps> = ({ selectedIncident, isLiveBackend, onOpen
         <div className="flex items-center space-x-2">
           <span className="text-[10px] font-bold tracking-wider px-1.5 py-0.5 rounded bg-cyan-950 text-cyan-400 border border-cyan-700/60 uppercase">NTRO • SIH-26143</span>
           <span className="flex items-center text-[10px] text-emerald-400 font-semibold">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block mr-1"></span>LIVE
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block mr-1"></span>
+            {wsConnected ? 'WS ACTIVE' : 'RADAR ACTIVE'}
           </span>
         </div>
         <div className="text-xs font-bold text-white tracking-tight leading-tight">
@@ -2192,39 +2502,97 @@ const Navbar: React.FC<NavbarProps> = ({ selectedIncident, isLiveBackend, onOpen
       </div>
     </div>
 
-    <div className="flex-1 max-w-md mx-4 hidden lg:block">
-      <div className="flex items-center bg-slate-800/60 border border-slate-700/60 rounded-lg px-3 py-1.5">
-        <span className="text-[10px] text-slate-500 font-bold uppercase mr-2">CASE</span>
-        <span className="text-[11px] text-cyan-300 font-bold truncate">{selectedIncident.title}</span>
+    {/* ── ALL INCIDENT CASES SELECTOR (Prominent Dropdown) ── */}
+    <div className="flex-1 max-w-xl mx-4 hidden sm:block">
+      <div className="flex items-center bg-slate-800/80 border border-slate-700/80 hover:border-cyan-500/60 rounded-xl px-3 py-1.5 transition-all shadow-md">
+        <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider mr-2 flex items-center gap-1.5 whitespace-nowrap">
+          <MapPin className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
+          <span>CASE:</span>
+        </span>
+        <select
+          value={selectedIncident.id}
+          onChange={(e) => {
+            const found = allIncidents.find((i) => i.id === e.target.value);
+            if (found) onSelectIncident(found);
+          }}
+          className="bg-transparent text-cyan-300 font-bold text-xs focus:outline-none cursor-pointer flex-1 truncate font-mono"
+        >
+          {allIncidents.map((inc) => (
+            <option
+              key={inc.id}
+              value={inc.id}
+              className="bg-slate-900 text-slate-100 py-1"
+            >
+              {inc.title} — {inc.regionName.split('·')[0].trim()}
+            </option>
+          ))}
+        </select>
       </div>
     </div>
 
     <div className="flex items-center space-x-2">
       <UTCClock />
-      <div className={`hidden md:flex items-center px-2.5 py-1.5 rounded-lg text-[10px] font-bold border ${isLiveBackend ? 'bg-emerald-950/80 text-emerald-300 border-emerald-600/70' : 'bg-amber-950/80 text-amber-300 border-amber-600/70'}`}>
-        <span className={`w-1.5 h-1.5 rounded-full mr-1.5 ${isLiveBackend ? 'bg-emerald-400 animate-pulse' : 'bg-amber-400'}`}></span>
-        {isLiveBackend ? 'LIVE' : 'DEMO'}
+      <div className={`hidden md:flex items-center px-2.5 py-1.5 rounded-lg text-[10px] font-bold border ${
+        wsConnected
+          ? 'bg-emerald-950/80 text-emerald-300 border-emerald-600/70'
+          : backendReachable
+          ? 'bg-cyan-950/80 text-cyan-300 border-cyan-600/70'
+          : 'bg-amber-950/80 text-amber-300 border-amber-600/70'
+      }`}>
+        <span className={`w-1.5 h-1.5 rounded-full mr-1.5 ${
+          wsConnected
+            ? 'bg-emerald-400 animate-pulse'
+            : backendReachable
+            ? 'bg-cyan-400 animate-pulse'
+            : 'bg-amber-400'
+        }`}></span>
+        {wsConnected ? 'LIVE WS' : backendReachable ? 'LIVE API' : 'HYBRID DEMO'}
       </div>
       <div className="h-6 w-px bg-slate-800 mx-1"></div>
-      <button onClick={onOpenAI} title="AI Console" className="p-2 rounded-lg bg-slate-800/70 hover:bg-purple-950/60 border border-slate-700/60 hover:border-purple-600/60 text-slate-300 hover:text-purple-300 transition-all">
+
+      {/* Coast Guard Alerts Button with Badge */}
+      <button
+        onClick={onOpenCoastGuard}
+        title="Coast Guard Operations Desk"
+        className="relative p-2 rounded-lg bg-slate-800/70 hover:bg-amber-950/60 border border-slate-700/60 hover:border-amber-600/60 text-slate-300 hover:text-amber-300 transition-all cursor-pointer"
+      >
+        <Shield className="w-4 h-4 text-amber-400" />
+        {pendingAlertCount > 0 && (
+          <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-rose-500 text-white text-[9px] font-black flex items-center justify-center animate-pulse">
+            {pendingAlertCount}
+          </span>
+        )}
+      </button>
+
+      {/* Simulation Studio Video Button */}
+      <button
+        onClick={onOpenSimulationVideo}
+        title="Hydrodynamic Simulation Video Studio"
+        className="p-2 rounded-lg bg-slate-800/70 hover:bg-cyan-950/60 border border-slate-700/60 hover:border-cyan-600/60 text-slate-300 hover:text-cyan-300 transition-all cursor-pointer"
+      >
+        <Video className="w-4 h-4 text-cyan-400" />
+      </button>
+
+      <button onClick={onOpenAI} title="AI Console" className="p-2 rounded-lg bg-slate-800/70 hover:bg-purple-950/60 border border-slate-700/60 hover:border-purple-600/60 text-slate-300 hover:text-purple-300 transition-all cursor-pointer">
         <Bot className="w-4 h-4" />
       </button>
-      <button onClick={onOpenAnalytics} title="Analytics" className="p-2 rounded-lg bg-slate-800/70 hover:bg-cyan-950/60 border border-slate-700/60 hover:border-cyan-600/60 text-slate-300 hover:text-cyan-300 transition-all">
+      <button onClick={onOpenAnalytics} title="Analytics" className="p-2 rounded-lg bg-slate-800/70 hover:bg-cyan-950/60 border border-slate-700/60 hover:border-cyan-600/60 text-slate-300 hover:text-cyan-300 transition-all cursor-pointer">
         <BarChart3 className="w-4 h-4" />
       </button>
-      <button onClick={onOpenReports} title="Reports" className="p-2 rounded-lg bg-slate-800/70 hover:bg-indigo-950/60 border border-slate-700/60 hover:border-indigo-600/60 text-slate-300 hover:text-indigo-300 transition-all">
+      <button onClick={onOpenReports} title="Reports" className="p-2 rounded-lg bg-slate-800/70 hover:bg-indigo-950/60 border border-slate-700/60 hover:border-indigo-600/60 text-slate-300 hover:text-indigo-300 transition-all cursor-pointer">
         <FileText className="w-4 h-4" />
       </button>
-      <button onClick={onOpenIngest} title="Ingest Scene" className="flex items-center space-x-1.5 px-3 py-2 rounded-lg bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white text-[11px] font-bold shadow-lg shadow-cyan-900/30 active:scale-95 transition-all">
+      <button onClick={onOpenIngest} title="Ingest Scene" className="flex items-center space-x-1.5 px-3 py-2 rounded-lg bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white text-[11px] font-bold shadow-lg shadow-cyan-900/30 active:scale-95 transition-all cursor-pointer">
         <Satellite className="w-3.5 h-3.5" />
         <span className="hidden md:inline">Ingest</span>
       </button>
+
       {/* ── DEMO MODE BUTTON ── */}
       {isDemoActive ? (
         <button
           onClick={onStopDemo}
           title="Stop Demo Mode"
-          className="flex items-center space-x-1.5 px-3 py-2 rounded-lg bg-amber-950/80 border border-amber-500 text-amber-300 text-[11px] font-bold hover:bg-amber-900/80 transition-all"
+          className="flex items-center space-x-1.5 px-3 py-2 rounded-lg bg-amber-950/80 border border-amber-500 text-amber-300 text-[11px] font-bold hover:bg-amber-900/80 transition-all cursor-pointer"
         >
           <X className="w-3.5 h-3.5" />
           <span className="hidden md:inline">STOP</span>
@@ -2233,7 +2601,7 @@ const Navbar: React.FC<NavbarProps> = ({ selectedIncident, isLiveBackend, onOpen
         <button
           onClick={onStartDemo}
           title="Start Demo Mode (or press D)"
-          className="flex items-center space-x-1.5 px-3 py-2 rounded-lg bg-slate-900 border border-amber-500/70 text-amber-300 text-[11px] font-bold hover:border-amber-400 hover:bg-amber-950/40 transition-all animate-[demoPulse_2s_ease-in-out_infinite]"
+          className="flex items-center space-x-1.5 px-3 py-2 rounded-lg bg-slate-900 border border-amber-500/70 text-amber-300 text-[11px] font-bold hover:border-amber-400 hover:bg-amber-950/40 transition-all animate-[demoPulse_2s_ease-in-out_infinite] cursor-pointer"
         >
           <Play className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
           <span className="hidden md:inline tracking-wider">DEMO</span>
@@ -2535,13 +2903,19 @@ const SarBanner: React.FC = () => (
   </div>
 );
 
-interface TabBarProps { active: TabKey; onChange: (k: TabKey) => void; }
+interface TabBarProps {
+  active: TabKey;
+  onChange: (k: TabKey) => void;
+  pendingAlertCount?: number;
+}
 
-const TabBar: React.FC<TabBarProps> = ({ active, onChange }) => {
-  const tabs: { key: TabKey; label: string; icon: React.ReactNode }[] = [
+const TabBar: React.FC<TabBarProps> = ({ active, onChange, pendingAlertCount = 0 }) => {
+  const tabs: { key: TabKey; label: string; icon: React.ReactNode; badge?: number }[] = [
     { key: 'dashboard', label: 'Dashboard', icon: <Sparkles className="w-4 h-4" /> },
     { key: 'map', label: 'Map View', icon: <LayoutDashboard className="w-4 h-4" /> },
+    { key: 'simulation-video', label: 'Simulation Video', icon: <Video className="w-4 h-4" /> },
     { key: 'attribution', label: 'Attribution', icon: <Award className="w-4 h-4" /> },
+    { key: 'cg-alerts', label: 'Coast Guard Ops', icon: <Shield className="w-4 h-4" />, badge: pendingAlertCount },
     { key: 'ai', label: 'AI Console', icon: <Bot className="w-4 h-4" /> },
     { key: 'analytics', label: 'Analytics', icon: <BarChart3 className="w-4 h-4" /> },
     { key: 'reports', label: 'Reports', icon: <FileText className="w-4 h-4" /> },
@@ -2552,13 +2926,18 @@ const TabBar: React.FC<TabBarProps> = ({ active, onChange }) => {
     <div className="bg-slate-900 border-b border-slate-800 px-4 flex items-center space-x-1 flex-shrink-0 overflow-x-auto no-print">
       {tabs.map((tab) => (
         <button key={tab.key} onClick={() => onChange(tab.key)}
-          className={`flex items-center space-x-2 px-4 py-2.5 text-xs font-bold uppercase tracking-wider border-b-2 transition-all whitespace-nowrap ${
+          className={`flex items-center space-x-2 px-3.5 py-2.5 text-xs font-bold uppercase tracking-wider border-b-2 transition-all whitespace-nowrap cursor-pointer ${
             active === tab.key
               ? 'text-cyan-300 border-cyan-500 bg-cyan-950/20'
               : 'text-slate-400 border-transparent hover:text-slate-200 hover:bg-slate-800/40'
           }`}>
           {tab.icon}
           <span>{tab.label}</span>
+          {Boolean(tab.badge && tab.badge > 0) && (
+            <span className="ml-1 px-1.5 py-0.2 rounded-full text-[9px] font-black bg-rose-500 text-white animate-pulse">
+              {tab.badge}
+            </span>
+          )}
         </button>
       ))}
     </div>
@@ -2574,9 +2953,43 @@ export const App: React.FC = () => {
   const [showPipelines, setShowPipelines] = useState(true);
   const [activeTab, setActiveTab] = useState<TabKey>('dashboard');
 
+  // ── COAST GUARD & BACKEND LIVE STREAM ─────────────────────────────────────────
+  const {
+    alerts: cgAlerts,
+    connected: wsConnected,
+    backendReachable,
+    acknowledge: acknowledgeCgAlert,
+    triggerTestAlert,
+    stations: cgStations,
+  } = useResponses();
+
+  const [selectedAlertId, setSelectedAlertId] = useState<string | null>(null);
+
+  const pendingAlertCount = useMemo(() => {
+    return cgAlerts.filter((a) => !a.ackedBy).length;
+  }, [cgAlerts]);
+
+  const handleAckCgAlert = async (alertId: string, officerId: string) => {
+    await acknowledgeCgAlert(alertId, officerId);
+  };
+
+  const handleTriggerTestAlert = async () => {
+    const alert = await triggerTestAlert({
+      incident_id: selectedIncident.id,
+      lat: selectedIncident.centerLat,
+      lon: selectedIncident.centerLon,
+      confidence: selectedIncident.fpFilterConfidence,
+      top_suspect_name: selectedIncident.suspects[0]?.name,
+    });
+    if (alert) {
+      setSelectedAlertId(alert.id);
+    }
+  };
+
   const [activeLayers, setActiveLayers] = useState({
     spillPolygon: true, backwardDrift: true, forwardForecast: true,
     originHeatmap: true, aisTracks: true, darkVessels: true,
+    windVectors: true,
   });
 
   // ── DEMO STATE ──────────────────────────────────────────────────────────────
@@ -2893,17 +3306,28 @@ export const App: React.FC = () => {
     <div className="flex flex-col h-screen w-screen bg-slate-950 text-slate-100 overflow-hidden font-sans print:h-auto print:overflow-visible print:block">
       <Navbar
         selectedIncident={selectedIncident}
-        isLiveBackend={isLiveBackend}
+        allIncidents={incidents}
+        onSelectIncident={handleSelectIncident}
+        isLiveBackend={isLiveBackend || wsConnected || backendReachable}
+        wsConnected={wsConnected}
+        backendReachable={backendReachable}
+        pendingAlertCount={pendingAlertCount}
         onOpenAI={() => setActiveTab('ai')}
         onOpenAnalytics={() => setActiveTab('analytics')}
         onOpenReports={() => setActiveTab('reports')}
         onOpenIngest={() => setActiveTab('ingest')}
+        onOpenSimulationVideo={() => setActiveTab('simulation-video')}
+        onOpenCoastGuard={() => setActiveTab('cg-alerts')}
         isDemoActive={demoActive}
         onStartDemo={handleStartDemo}
         onStopDemo={handleStopDemo}
       />
 
-      <TabBar active={activeTab} onChange={setActiveTab} />
+      <TabBar
+        active={activeTab}
+        onChange={setActiveTab}
+        pendingAlertCount={pendingAlertCount}
+      />
 
       <div className="flex-1 relative overflow-hidden print:overflow-visible print:relative print:h-auto">
         {activeTab === 'dashboard' && (
@@ -3087,6 +3511,30 @@ export const App: React.FC = () => {
               </div>
             )}
           </>
+        )}
+
+        {activeTab === 'simulation-video' && (
+          <div className="absolute inset-0 overflow-y-auto bg-slate-950 p-6">
+            <SimulationVideoStudio
+              incident={selectedIncident}
+              allIncidents={incidents}
+              onSelectIncident={setSelectedIncident}
+            />
+          </div>
+        )}
+
+        {activeTab === 'cg-alerts' && (
+          <div className="absolute inset-0 overflow-y-auto bg-slate-950 p-6">
+            <CoastGuardAlertPanel
+              alerts={cgAlerts}
+              selectedAlertId={selectedAlertId}
+              onSelectAlert={setSelectedAlertId}
+              onAcknowledge={handleAckCgAlert}
+              onTriggerTestAlert={handleTriggerTestAlert}
+              stations={cgStations}
+              backendConnected={wsConnected || backendReachable}
+            />
+          </div>
         )}
 
         {activeTab === 'attribution' && (
