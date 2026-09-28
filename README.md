@@ -719,6 +719,10 @@ python backend/scripts/test_workflow.py
 
 Payodhi produces investigative decision-support deliverables formatted under **UNCLOS Article 217 (Enforcement by Flag States)**, **UNCLOS Article 218 (Enforcement by Port States)**, and **MARPOL 73/78 Annex I (Prevention of Pollution by Oil)**. All attribution scores and evidence dossiers are cryptographically sealed with SHA-256 hashes to guarantee admissibility and evidentiary integrity.
 
+
+DEMO VIDEO LINK : https://youtu.be/v5dbKkuq6Dw?si=SdjcVBbcONtPjTos
+SIMULATION VIDEO LINK : https://youtu.be/neq8UN2w2Do?si=GFgYiMHdMlJ_dD-_
+
 ---
 
 <p align="center">
